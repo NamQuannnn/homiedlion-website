@@ -7,19 +7,19 @@ export default function Products() {
       title: 'Raw Cashew Nuts',
       description: 'Premium quality RCN sourced from trusted origins including West Africa.',
       icon: '🌰',
-      link: '/products',
+      link: '/products/raw-cashew-nuts',
     },
     {
       title: 'Cashew Kernels',
       description: 'High-quality processed kernels meeting international export standards.',
       icon: '🥜',
-      link: '/products',
+      link: '/products/cashew-kernels',
     },
     {
       title: 'Freight Services',
       description: 'Reliable global shipping and logistics support for international trade.',
       icon: '🚢',
-      link: '/products',
+      link: '/products/freight-services',
     },
   ];
 
