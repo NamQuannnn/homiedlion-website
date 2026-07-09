@@ -1,28 +1,30 @@
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
-import Heading from "@/components/ui/Heading";
 import Section from "@/components/ui/Section";
 
 export default function MarketInsights() {
   const insights = [
     {
       title: "Market Reports",
-      description: "Weekly and monthly market analysis.",
+      description:
+        "Weekly and monthly cashew market analysis for better trading decisions.",
       icon: "📄",
       buttonText: "Read Reports",
       link: "/market-insights/reports",
     },
     {
       title: "Price Trends",
-      description: "Interactive price charts and historical data.",
+      description:
+        "Track RCN and kernel price movements across key origins and markets.",
       icon: "📈",
       buttonText: "View Charts",
       link: "/market-insights/trends",
     },
     {
       title: "Industry News",
-      description: "Latest news from global cashew markets.",
+      description:
+        "Latest updates from global cashew origins, buyers, exporters and logistics.",
       icon: "📰",
       buttonText: "Read News",
       link: "/market-insights/news",
@@ -32,13 +34,50 @@ export default function MarketInsights() {
   return (
     <Section className="bg-white">
       <Container>
-        <Heading
-          eyebrow="MARKET INSIGHTS"
-          title="Latest Cashew Market Updates"
-          description="Stay informed with market reports, price trends and industry news from Homie D'Lion Group."
-        />
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-end">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-[#7A5A2B]">
+              MARKET INSIGHTS
+            </p>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              Cashew market intelligence for global trade
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Stay informed with market reports, price trends and industry news
+              from Homie D&apos;Lion Group.
+            </p>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Button href="/market-insights">Explore Insights</Button>
+              <Button href="/market-insights/reports" variant="outline">
+                View Reports
+              </Button>
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-gray-200 bg-[#FAF8F5] p-6 shadow-sm">
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div>
+                <p className="text-3xl font-bold text-gray-900">3</p>
+                <p className="mt-1 text-sm text-gray-600">Insight categories</p>
+              </div>
+
+              <div>
+                <p className="text-3xl font-bold text-gray-900">24/7</p>
+                <p className="mt-1 text-sm text-gray-600">Market tracking</p>
+              </div>
+
+              <div>
+                <p className="text-3xl font-bold text-gray-900">Global</p>
+                <p className="mt-1 text-sm text-gray-600">Cashew coverage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
           {insights.map((item) => (
             <Card key={item.link} className="flex h-full flex-col">
               <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FAF8F5] text-3xl">
