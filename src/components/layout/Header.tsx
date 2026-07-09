@@ -1,37 +1,44 @@
-import Link from 'next/link';
-import { theme } from '@/lib/theme';
+import { Link } from "@/i18n/routing";
+import Container from "@/components/ui/Container";
+import { navigation } from "@/config/navigation";
+import { site } from "@/config/site";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
-  const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Products', href: '/products' },
-    { name: 'Market Insights', href: '/market-insights' },
-    { name: 'Contact', href: '/contact' },
-  ];
+  const enabledNavItems = navigation.filter((item) => item.enabled);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#FAF8F5] border-b border-gray-200">
-      <div className={theme.layout.container}>
-        <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-2xl font-bold text-[#7A5A2B] tracking-tight">
-              Homie D'Lion Group
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-[#FAF8F5]/95 backdrop-blur">
+      <Container>
+        <div className="flex h-20 items-center justify-between">
+          <div className="flex flex-shrink-0 items-center">
+            <Link
+              href="/"
+              className="text-2xl font-bold tracking-tight text-[#7A5A2B]"
+            >
+              {site.name}
             </Link>
           </div>
-          <nav className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-[#6B7280] hover:text-[#7A5A2B] transition-colors text-sm font-medium"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
+
+          <div className="hidden items-center space-x-8 md:flex">
+            <nav className="flex space-x-8">
+              {enabledNavItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm font-medium text-[#6B7280] transition-colors hover:text-[#7A5A2B]"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="h-5 border-l border-gray-300" />
+
+            <LanguageSwitcher />
+          </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }
