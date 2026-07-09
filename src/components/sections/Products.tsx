@@ -1,68 +1,69 @@
-import Link from 'next/link';
-import { theme } from '@/lib/theme';
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
+import Container from "@/components/ui/Container";
+import Heading from "@/components/ui/Heading";
+import Section from "@/components/ui/Section";
 
 export default function Products() {
   const products = [
     {
-      title: 'Raw Cashew Nuts',
-      description: 'Premium quality RCN sourced from trusted origins including West Africa.',
-      icon: '🌰',
-      link: '/products/raw-cashew-nuts',
+      title: "Raw Cashew Nuts",
+      description:
+        "Premium quality RCN sourced from trusted origins including West Africa.",
+      icon: "🌰",
+      link: "/products/raw-cashew-nuts",
     },
     {
-      title: 'Cashew Kernels',
-      description: 'High-quality processed kernels meeting international export standards.',
-      icon: '🥜',
-      link: '/products/cashew-kernels',
+      title: "Cashew Kernels",
+      description:
+        "High-quality processed kernels meeting international export standards.",
+      icon: "🥜",
+      link: "/products/cashew-kernels",
     },
     {
-      title: 'Freight Services',
-      description: 'Reliable global shipping and logistics support for international trade.',
-      icon: '🚢',
-      link: '/products/freight-services',
+      title: "Freight Services",
+      description:
+        "Reliable global shipping and logistics support for international trade.",
+      icon: "🚢",
+      link: "/products/freight-services",
     },
   ];
 
   return (
-    <section className={`bg-[#FAF8F5] ${theme.layout.section}`}>
-      <div className={theme.layout.container}>
-        
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className={theme.typography.sectionSubtitle}>
-            OUR PRODUCTS
-          </span>
-          <h2 className={theme.typography.h2}>
-            What We Offer
-          </h2>
-          <p className={theme.typography.bodyText}>
-            Homie D'Lion Group supplies premium agricultural products and logistics services for customers around the world.
-          </p>
-        </div>
+    <Section className="bg-[#FAF8F5]">
+      <Container>
+        <Heading
+          eyebrow="OUR PRODUCTS"
+          title="What We Offer"
+          description="Homie D'Lion Group supplies premium agricultural products and logistics services for customers around the world."
+        />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <div key={index} className={theme.cards.base}>
-              <div className={theme.cards.iconWrapper}>
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {products.map((product) => (
+            <Card key={product.link} className="flex h-full flex-col">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FAF8F5] text-3xl">
                 {product.icon}
               </div>
+
               <div className="flex-grow space-y-4">
-                <h4 className={theme.typography.h4}>
+                <h3 className="text-xl font-semibold text-gray-900">
                   {product.title}
-                </h4>
-                <p className={theme.typography.bodyText}>
+                </h3>
+
+                <p className="text-base leading-7 text-gray-600">
                   {product.description}
                 </p>
               </div>
-              <div className="pt-8 mt-auto">
-                <Link href={product.link} className={theme.buttons.textLink}>
-                  Learn More <span className="ml-2 text-xl leading-none">→</span>
-                </Link>
+
+              <div className="mt-8">
+                <Button href={product.link} variant="outline">
+                  Learn More →
+                </Button>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
-        
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }
