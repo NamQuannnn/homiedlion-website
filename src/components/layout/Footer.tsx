@@ -1,11 +1,15 @@
+import { theme } from '@/lib/theme';
+
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-gray-200 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-600">
-        <p>
-          &copy; {new Date().getFullYear()} Homie D&apos;Lion Group. All rights
-          reserved.
-        </p>
+    <footer className="bg-[#7A5A2B] text-white mt-auto">
+      <div className={`${theme.layout.container} py-10`}>
+        <div className="flex flex-col items-center justify-center text-center space-y-2">
+          <h2 className="text-lg font-semibold tracking-wider">Homie D'Lion Group</h2>
+          <p className="text-[#B89A5E] text-sm">
+            © {new Date().getFullYear()} Homie D'Lion. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
