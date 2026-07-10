@@ -145,7 +145,19 @@
     "button": "Liên hệ với chúng tôi"
   }
 },
-
+  "MarketInsightsPage": {
+    "title": "Thông tin Thị trường",
+    "breadcrumb": "Thông tin Thị trường",
+    "eyebrow": "THƯ VIỆN BÁO CÁO",
+    "heading": "Báo cáo thị trường điều",
+    "description": "Tổng hợp các báo cáo, cập nhật và phân tích thị trường điều từ Homie D'Lion Group.",
+    "readReport": "Đọc báo cáo"
+},
+   "ReportDetail": {
+     "library": "Thư viện báo cáo",
+     "download": "Tải PDF",
+     "back": "Quay lại"
+},
   "Footer": {
     "quickLinks": "Liên kết nhanh",
     "products": "Sản phẩm",

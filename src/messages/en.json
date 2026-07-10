@@ -145,7 +145,19 @@
     "button": "Contact Us"
   }
 },
-
+  "MarketInsightsPage": {
+    "title": "Market Insights",
+    "breadcrumb": "Market Insights",
+    "eyebrow": "REPORT LIBRARY",
+    "heading": "Cashew Market Reports",
+    "description": "A collection of cashew market reports, updates and analysis from Homie D'Lion Group.",
+    "readReport": "Read Report"
+},
+   "ReportDetail": {
+     "library": "Report Library",
+     "download": "Download PDF",
+     "back": "Back"
+},
   "Footer": {
     "quickLinks": "Quick Links",
     "products": "Products",

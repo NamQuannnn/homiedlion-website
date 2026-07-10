@@ -1,23 +1,61 @@
-import PageHeader from '@/components/ui/PageHeader';
-import { theme } from '@/lib/theme';
+import { getLocale, getTranslations } from "next-intl/server";
 
-export default function MarketInsightsPage() {
+import Container from "@/components/ui/Container";
+import PageHeader from "@/components/ui/PageHeader";
+import Section from "@/components/ui/Section";
+import ReportCard from "@/components/reports/ReportCard";
+import { reports } from "@/content/reports/reports";
+
+export default async function MarketInsightsPage() {
+  const locale = await getLocale();
+  const t = await getTranslations("MarketInsightsPage");
+
+  const sortedReports = [...reports].sort(
+    (a, b) =>
+      new Date(b.publishedAt).getTime() -
+      new Date(a.publishedAt).getTime()
+  );
+
   return (
     <div className="w-full flex-grow">
-      <PageHeader 
-        title="Market Insights" 
-        breadcrumbs={[{ label: 'Market Insights', href: '/market-insights' }]} 
+      <PageHeader
+        title={t("title")}
+        breadcrumbs={[
+          {
+            label: t("breadcrumb"),
+            href: "/market-insights",
+          },
+        ]}
       />
-      <section className={`bg-white ${theme.layout.section}`}>
-        <div className={theme.layout.container}>
-          <div className="max-w-3xl">
-            <h2 className={theme.typography.h3}>Industry News & Trends</h2>
-            <p className={`${theme.typography.bodyText} mt-6`}>
-              Placeholder content for Market Insights. Future updates will include a dynamic list of articles, weekly price trends, and comprehensive cashew market reports.
+
+      <Section className="bg-surface">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+              {t("eyebrow")}
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-text sm:text-4xl">
+              {t("heading")}
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-text-secondary">
+              {t("description")}
             </p>
           </div>
-        </div>
-      </section>
+
+          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {sortedReports.map((report) => (
+              <ReportCard
+                key={report.slug}
+                report={report}
+                locale={locale}
+                readLabel={t("readReport")}
+              />
+            ))}
+          </div>
+        </Container>
+      </Section>
     </div>
   );
 }

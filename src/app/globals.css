@@ -17,7 +17,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
-
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
   --color-primary-light: var(--primary-light);
