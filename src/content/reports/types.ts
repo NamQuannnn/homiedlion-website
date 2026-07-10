@@ -3,5 +3,5 @@ export interface Report {
     title: string;
     publishedAt: string;
     summary: string;
-    pdf: string;
+    file: string;
   }
