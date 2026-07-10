@@ -1,9 +1,102 @@
 {
-    "Hero": {
-      "title": "Homie D'Lion Group",
-      "subtitle": "Built with Trust and Effort",
-      "description": "Global Cashew Trading & Market Intelligence",
-      "exploreProducts": "Explore Products",
-      "marketInsights": "Market Insights"
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "marketInsights": "Market Insights",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Homie D'Lion Group",
+    "subtitle": "Built with Trust and Effort",
+    "description": "Global Cashew Trading & Market Intelligence",
+    "exploreProducts": "Explore Products",
+    "marketInsights": "Market Insights"
+  },
+  "About": {
+    "eyebrow": "ABOUT US",
+    "title": "Trusted Partner in Global Cashew Trade",
+    "description1": "Homie D'Lion Group is committed to providing premium Raw Cashew Nuts, Cashew Kernels, and reliable logistics solutions to customers worldwide.",
+    "description2": "Our focus is transparency, long-term partnerships, and market intelligence that helps clients make better business decisions.",
+    "features": {
+      "premiumProducts": "Premium Products",
+      "reliableSupplyChain": "Reliable Supply Chain",
+      "globalTradingExperience": "Global Trading Experience",
+      "marketIntelligence": "Market Intelligence"
+    },
+    "learnMore": "Learn More"
+  },
+  "Products": {
+    "eyebrow": "OUR PRODUCTS",
+    "title": "What We Offer",
+    "description": "Homie D'Lion Group supplies premium agricultural products and logistics services for customers around the world.",
+    "rawCashewNuts": {
+      "title": "Raw Cashew Nuts",
+      "description": "Premium quality RCN sourced from trusted origins including West Africa."
+    },
+    "cashewKernels": {
+      "title": "Cashew Kernels",
+      "description": "High-quality processed kernels meeting international export standards."
+    },
+    "freightServices": {
+      "title": "Freight Services",
+      "description": "Reliable global shipping and logistics support for international trade."
+    },
+    "learnMore": "Learn More"
+  },
+  "MarketInsights": {
+    "eyebrow": "MARKET INSIGHTS",
+    "title": "Cashew market intelligence for global trade",
+    "description": "Stay informed with market reports, price trends and industry news from Homie D'Lion Group.",
+    "exploreInsights": "Explore Insights",
+    "viewReports": "View Reports",
+    "stats": {
+      "categoriesValue": "3",
+      "categoriesLabel": "Insight categories",
+      "trackingValue": "24/7",
+      "trackingLabel": "Market tracking",
+      "coverageValue": "Global",
+      "coverageLabel": "Cashew coverage"
+    },
+    "reports": {
+      "title": "Market Reports",
+      "description": "Weekly and monthly cashew market analysis for better trading decisions.",
+      "button": "Read Reports"
+    },
+    "trends": {
+      "title": "Price Trends",
+      "description": "Track RCN and kernel price movements across key origins and markets.",
+      "button": "View Charts"
+    },
+    "news": {
+      "title": "Industry News",
+      "description": "Latest updates from global cashew origins, buyers, exporters and logistics.",
+      "button": "Read News"
     }
+  },
+  "Contact": {
+    "eyebrow": "CONTACT US",
+    "title": "Let's Grow Together",
+    "description": "Whether you're looking for premium cashew products, reliable logistics, or the latest market insights, our team is ready to help.",
+    "getInTouch": "Get in Touch",
+    "company": "Company",
+    "address": "Address",
+    "email": "Email",
+    "website": "Website",
+    "fullName": "Full Name",
+    "companyField": "Company",
+    "emailField": "Email",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "companyPlaceholder": "Your company",
+    "emailPlaceholder": "you@company.com",
+    "messagePlaceholder": "How can we help you?",
+    "sendInquiry": "Send Inquiry"
+  },
+  "Footer": {
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "contact": "Contact",
+    "rights": "All rights reserved."
   }
+}

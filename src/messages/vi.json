@@ -1,9 +1,102 @@
 {
-    "Hero": {
-      "title": "Homie D'Lion Group",
-      "subtitle": "Xây dựng bằng Niềm tin và Nỗ lực",
-      "description": "Thương mại Điều Toàn cầu & Thông tin Thị trường",
-      "exploreProducts": "Khám phá Sản phẩm",
-      "marketInsights": "Thông tin Thị trường"
+  "Navigation": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "products": "Sản phẩm",
+    "marketInsights": "Thông tin Thị trường",
+    "contact": "Liên hệ"
+  },
+  "Hero": {
+    "title": "Homie D'Lion Group",
+    "subtitle": "Xây dựng bằng Niềm tin và Nỗ lực",
+    "description": "Thương mại Điều Toàn cầu & Thông tin Thị trường",
+    "exploreProducts": "Khám phá Sản phẩm",
+    "marketInsights": "Thông tin Thị trường"
+  },
+  "About": {
+    "eyebrow": "VỀ CHÚNG TÔI",
+    "title": "Đối tác tin cậy trong thương mại điều toàn cầu",
+    "description1": "Homie D'Lion Group cam kết cung cấp Điều thô (RCN), Nhân điều và các giải pháp logistics chất lượng cao cho khách hàng trên toàn thế giới.",
+    "description2": "Chúng tôi tập trung vào sự minh bạch, quan hệ hợp tác lâu dài và cung cấp thông tin thị trường giúp khách hàng đưa ra quyết định kinh doanh hiệu quả hơn.",
+    "features": {
+      "premiumProducts": "Sản phẩm chất lượng cao",
+      "reliableSupplyChain": "Chuỗi cung ứng ổn định",
+      "globalTradingExperience": "Kinh nghiệm thương mại quốc tế",
+      "marketIntelligence": "Thông tin thị trường"
+    },
+    "learnMore": "Tìm hiểu thêm"
+  },
+  "Products": {
+    "eyebrow": "SẢN PHẨM",
+    "title": "Những gì chúng tôi cung cấp",
+    "description": "Homie D'Lion Group cung cấp các sản phẩm nông nghiệp chất lượng cao cùng dịch vụ logistics cho khách hàng trên toàn thế giới.",
+    "rawCashewNuts": {
+      "title": "Điều thô (RCN)",
+      "description": "Điều thô chất lượng cao được thu mua từ các vùng nguyên liệu uy tín tại Tây Phi."
+    },
+    "cashewKernels": {
+      "title": "Nhân điều",
+      "description": "Nhân điều chế biến đạt tiêu chuẩn quốc tế, đáp ứng yêu cầu xuất khẩu."
+    },
+    "freightServices": {
+      "title": "Dịch vụ Logistics",
+      "description": "Giải pháp vận chuyển và logistics đáng tin cậy cho thương mại quốc tế."
+    },
+    "learnMore": "Xem thêm"
+  },
+  "MarketInsights": {
+    "eyebrow": "THÔNG TIN THỊ TRƯỜNG",
+    "title": "Thông tin thị trường điều toàn cầu",
+    "description": "Cập nhật báo cáo thị trường, xu hướng giá và tin tức ngành điều từ Homie D'Lion Group.",
+    "exploreInsights": "Khám phá",
+    "viewReports": "Xem báo cáo",
+    "stats": {
+      "categoriesValue": "3",
+      "categoriesLabel": "Chuyên mục",
+      "trackingValue": "24/7",
+      "trackingLabel": "Theo dõi thị trường",
+      "coverageValue": "Toàn cầu",
+      "coverageLabel": "Thị trường điều"
+    },
+    "reports": {
+      "title": "Báo cáo thị trường",
+      "description": "Phân tích thị trường điều hàng tuần và hàng tháng giúp đưa ra quyết định giao dịch tốt hơn.",
+      "button": "Đọc báo cáo"
+    },
+    "trends": {
+      "title": "Xu hướng giá",
+      "description": "Theo dõi biến động giá điều thô và nhân điều tại các thị trường trọng điểm.",
+      "button": "Xem biểu đồ"
+    },
+    "news": {
+      "title": "Tin tức ngành",
+      "description": "Cập nhật tin tức mới nhất từ các nước sản xuất, người mua, nhà xuất khẩu và logistics.",
+      "button": "Đọc tin"
     }
+  },
+  "Contact": {
+    "eyebrow": "LIÊN HỆ",
+    "title": "Hãy cùng hợp tác",
+    "description": "Nếu bạn đang tìm kiếm nguồn cung điều chất lượng, giải pháp logistics hoặc thông tin thị trường mới nhất, đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ.",
+    "getInTouch": "Liên hệ với chúng tôi",
+    "company": "Công ty",
+    "address": "Địa chỉ",
+    "email": "Email",
+    "website": "Website",
+    "fullName": "Họ và tên",
+    "companyField": "Công ty",
+    "emailField": "Email",
+    "message": "Nội dung",
+    "namePlaceholder": "Tên của bạn",
+    "companyPlaceholder": "Tên công ty",
+    "emailPlaceholder": "email@congty.com",
+    "messagePlaceholder": "Chúng tôi có thể hỗ trợ gì cho bạn?",
+    "sendInquiry": "Gửi yêu cầu"
+  },
+  "Footer": {
+    "quickLinks": "Liên kết nhanh",
+    "products": "Sản phẩm",
+    "contact": "Liên hệ",
+    "rights": "Bảo lưu mọi quyền."
   }
+}
