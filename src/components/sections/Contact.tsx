@@ -12,12 +12,12 @@ export default function Contact() {
     },
     {
       label: "Address",
-      value: "Ho Chi Minh City, Vietnam",
+      value: "11 Street No. 1, Quarter 56, Hiep Binh Ward, Ho Chi Minh City, Vietnam",
       icon: "📍",
     },
     {
       label: "Email",
-      value: "contact@homiedlion.com",
+      value: "sales.homiecashews@gmail.com",
       icon: "✉️",
     },
     {
@@ -28,10 +28,10 @@ export default function Contact() {
   ];
 
   const inputClassName =
-    "w-full rounded-lg border border-gray-200 bg-[#FAF8F5] px-4 py-3 text-[#2C2C2C] outline-none transition-colors focus:border-[#7A5A2B] focus:bg-white focus:ring-2 focus:ring-[#7A5A2B]";
+    "w-full rounded-lg border border-border bg-background px-4 py-3 text-text outline-none transition-colors placeholder:text-text-secondary focus:border-primary focus:bg-surface focus:ring-2 focus:ring-primary/20";
 
   return (
-    <Section className="bg-[#FAF8F5]">
+    <Section className="bg-background">
       <Container>
         <Heading
           eyebrow="CONTACT US"
@@ -41,22 +41,22 @@ export default function Contact() {
 
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <Card>
-            <h3 className="mb-8 text-2xl font-bold text-[#2C2C2C]">
+            <h3 className="mb-8 text-2xl font-bold text-text">
               Get in Touch
             </h3>
 
             <div className="space-y-8">
               {contactItems.map((item) => (
                 <div key={item.label} className="flex items-start space-x-4">
-                  <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-[#FAF8F5] text-3xl">
+                  <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-primary-light text-3xl">
                     {item.icon}
                   </div>
 
                   <div>
-                    <p className="text-lg font-medium text-[#2C2C2C]">
+                    <p className="text-lg font-medium text-text">
                       {item.label}
                     </p>
-                    <p className="mt-1 text-base leading-7 text-gray-600">
+                    <p className="mt-1 text-base leading-7 text-text-secondary">
                       {item.value}
                     </p>
                   </div>
@@ -71,7 +71,7 @@ export default function Contact() {
                 <div className="space-y-2">
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-[#2C2C2C]"
+                    className="block text-sm font-medium text-text"
                   >
                     Full Name
                   </label>
@@ -86,7 +86,7 @@ export default function Contact() {
                 <div className="space-y-2">
                   <label
                     htmlFor="company"
-                    className="block text-sm font-medium text-[#2C2C2C]"
+                    className="block text-sm font-medium text-text"
                   >
                     Company
                   </label>
@@ -102,7 +102,7 @@ export default function Contact() {
               <div className="space-y-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-[#2C2C2C]"
+                  className="block text-sm font-medium text-text"
                 >
                   Email
                 </label>
@@ -117,7 +117,7 @@ export default function Contact() {
               <div className="space-y-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-[#2C2C2C]"
+                  className="block text-sm font-medium text-text"
                 >
                   Message
                 </label>
@@ -131,7 +131,7 @@ export default function Contact() {
 
               <button
                 type="button"
-                className="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
+                className="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary/30"
               >
                 Send Inquiry
               </button>

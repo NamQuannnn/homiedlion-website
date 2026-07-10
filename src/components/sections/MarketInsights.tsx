@@ -32,46 +32,53 @@ export default function MarketInsights() {
   ];
 
   return (
-    <Section className="bg-white">
+    <Section className="bg-surface">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-end">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-[#7A5A2B]">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
               MARKET INSIGHTS
             </p>
 
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="text-4xl font-bold tracking-tight text-text sm:text-5xl">
               Cashew market intelligence for global trade
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-text-secondary">
               Stay informed with market reports, price trends and industry news
               from Homie D&apos;Lion Group.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button href="/market-insights">Explore Insights</Button>
+
               <Button href="/market-insights/reports" variant="outline">
                 View Reports
               </Button>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-gray-200 bg-[#FAF8F5] p-6 shadow-sm">
+          <div className="rounded-3xl border border-border bg-background p-6 shadow-sm">
             <div className="grid gap-4 sm:grid-cols-3">
               <div>
-                <p className="text-3xl font-bold text-gray-900">3</p>
-                <p className="mt-1 text-sm text-gray-600">Insight categories</p>
+                <p className="text-3xl font-bold text-text">3</p>
+                <p className="mt-1 text-sm text-text-secondary">
+                  Insight categories
+                </p>
               </div>
 
               <div>
-                <p className="text-3xl font-bold text-gray-900">24/7</p>
-                <p className="mt-1 text-sm text-gray-600">Market tracking</p>
+                <p className="text-3xl font-bold text-text">24/7</p>
+                <p className="mt-1 text-sm text-text-secondary">
+                  Market tracking
+                </p>
               </div>
 
               <div>
-                <p className="text-3xl font-bold text-gray-900">Global</p>
-                <p className="mt-1 text-sm text-gray-600">Cashew coverage</p>
+                <p className="text-3xl font-bold text-text">Global</p>
+                <p className="mt-1 text-sm text-text-secondary">
+                  Cashew coverage
+                </p>
               </div>
             </div>
           </div>
@@ -80,16 +87,16 @@ export default function MarketInsights() {
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
           {insights.map((item) => (
             <Card key={item.link} className="flex h-full flex-col">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FAF8F5] text-3xl">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
                 {item.icon}
               </div>
 
               <div className="flex-grow space-y-3">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-text">
                   {item.title}
                 </h3>
 
-                <p className="text-base leading-7 text-gray-600">
+                <p className="text-base leading-7 text-text-secondary">
                   {item.description}
                 </p>
               </div>

@@ -30,7 +30,7 @@ export default function Products() {
   ];
 
   return (
-    <Section className="bg-[#FAF8F5]">
+    <Section className="bg-background">
       <Container>
         <Heading
           eyebrow="OUR PRODUCTS"
@@ -41,16 +41,16 @@ export default function Products() {
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <Card key={product.link} className="flex h-full flex-col">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FAF8F5] text-3xl">
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
                 {product.icon}
               </div>
 
               <div className="flex-grow space-y-4">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-text">
                   {product.title}
                 </h3>
 
-                <p className="text-base leading-7 text-gray-600">
+                <p className="text-base leading-7 text-text-secondary">
                   {product.description}
                 </p>
               </div>

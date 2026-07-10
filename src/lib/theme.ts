@@ -1,31 +1,57 @@
 export const theme = {
-    colors: {
-      primary: '#7A5A2B',
-      secondary: '#B89A5E',
-      background: '#FAF8F5',
-      text: '#2C2C2C',
-      lightText: '#6B7280',
-    },
-    buttons: {
-      primary: 'inline-flex items-center justify-center px-8 py-3.5 bg-[#7A5A2B] text-white font-medium rounded-lg hover:bg-[#684C24] transition-all duration-300 shadow-sm hover:shadow-md w-full sm:w-auto',
-      secondary: 'inline-flex items-center justify-center px-8 py-3.5 bg-[#B89A5E] text-white font-medium rounded-lg hover:bg-[#9E834D] transition-all duration-300 shadow-sm hover:shadow-md w-full sm:w-auto',
-      outline: 'inline-flex items-center justify-center px-8 py-3.5 bg-transparent text-[#7A5A2B] border border-[#7A5A2B] font-medium rounded-lg hover:bg-[#FAF8F5] transition-all duration-300 shadow-sm hover:shadow-md w-full sm:w-auto',
-      textLink: 'inline-flex items-center text-[#7A5A2B] font-medium hover:text-[#684C24] transition-colors',
-    },
-    cards: {
-      base: 'bg-white rounded-2xl p-8 flex flex-col h-full shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100',
-      iconWrapper: 'text-4xl mb-6 bg-[#FAF8F5] text-[#7A5A2B] w-16 h-16 flex items-center justify-center rounded-2xl shadow-sm border border-[#7A5A2B]/10',
-    },
-    typography: {
-      h1: 'text-5xl sm:text-6xl lg:text-7xl font-extrabold text-[#2C2C2C] tracking-tight leading-tight',
-      h2: 'text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2C2C2C] tracking-tight leading-tight',
-      h3: 'text-2xl font-bold text-[#2C2C2C]',
-      h4: 'text-xl font-bold text-[#2C2C2C]',
-      sectionSubtitle: 'text-sm font-bold tracking-widest text-[#7A5A2B] uppercase mb-4 block',
-      bodyText: 'text-lg text-[#6B7280] font-light leading-relaxed',
-    },
-    layout: {
-      section: 'py-20 lg:py-32 w-full',
-      container: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8',
-    }
-  };
+  colors: {
+    primary: "var(--color-primary)",
+    primaryHover: "var(--color-primary-hover)",
+    secondary: "var(--color-secondary)",
+    background: "var(--color-background)",
+    surface: "var(--color-surface)",
+    text: "var(--color-text)",
+    lightText: "var(--color-text-secondary)",
+    border: "var(--color-border)",
+  },
+
+  buttons: {
+    primary:
+      "inline-flex w-full items-center justify-center rounded-lg bg-[var(--color-primary)] px-8 py-3.5 font-medium text-white shadow-sm transition-all duration-300 hover:bg-[var(--color-primary-hover)] hover:shadow-md sm:w-auto",
+
+    secondary:
+      "inline-flex w-full items-center justify-center rounded-lg bg-[var(--color-secondary)] px-8 py-3.5 font-medium text-white shadow-sm transition-all duration-300 hover:opacity-90 hover:shadow-md sm:w-auto",
+
+    outline:
+      "inline-flex w-full items-center justify-center rounded-lg border border-[var(--color-primary)] bg-transparent px-8 py-3.5 font-medium text-[var(--color-primary)] shadow-sm transition-all duration-300 hover:bg-[var(--color-primary-light)] hover:shadow-md sm:w-auto",
+
+    textLink:
+      "inline-flex items-center font-medium text-[var(--color-primary)] transition-colors hover:text-[var(--color-primary-hover)]",
+  },
+
+  cards: {
+    base:
+      "flex h-full flex-col rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg",
+
+    iconWrapper:
+      "mb-6 flex h-16 w-16 items-center justify-center rounded-2xl border border-[var(--color-primary)]/10 bg-[var(--color-primary-light)] text-4xl text-[var(--color-primary)] shadow-sm",
+  },
+
+  typography: {
+    h1:
+      "text-5xl font-extrabold leading-tight tracking-tight text-[var(--color-text)] sm:text-6xl lg:text-7xl",
+
+    h2:
+      "text-3xl font-extrabold leading-tight tracking-tight text-[var(--color-text)] sm:text-4xl lg:text-5xl",
+
+    h3: "text-2xl font-bold text-[var(--color-text)]",
+
+    h4: "text-xl font-bold text-[var(--color-text)]",
+
+    sectionSubtitle:
+      "mb-4 block text-sm font-bold uppercase tracking-widest text-[var(--color-primary)]",
+
+    bodyText:
+      "text-lg font-light leading-relaxed text-[var(--color-text-secondary)]",
+  },
+
+  layout: {
+    section: "w-full py-20 lg:py-32",
+    container: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",
+  },
+};

@@ -1,11 +1,16 @@
 export const colors = {
-    background: "#FAF8F5",
+    // Brand
+    primary: "#FE0000",
+    primaryLight: "#FFF5F5",
   
-    text: "#111827",
+    // Background
+    background: "#FFF5F5",
+    surface: "#FFFFFF",
   
-    primary: "#111827",
+    // Text
+    text: "#2C2C2C",
+    textSecondary: "#6B7280",
   
-    secondary: "#6B7280",
-  
+    // Border
     border: "#E5E7EB",
   };

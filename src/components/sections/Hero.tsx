@@ -9,7 +9,7 @@ export default function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <Section className="relative bg-[#FAF8F5]">
+    <Section className="relative bg-background">
       <Container>
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
           <Heading
@@ -19,9 +19,14 @@ export default function Hero() {
           />
 
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button href="/products">{t("exploreProducts")}</Button>
+            <Button href="/products">
+              {t("exploreProducts")}
+            </Button>
 
-            <Button href="/market-insights" variant="outline">
+            <Button
+              href="/market-insights"
+              variant="outline"
+            >
               {t("marketInsights")}
             </Button>
           </div>

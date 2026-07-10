@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-auto bg-[#2C2C2C] text-white">
+    <footer className="mt-auto bg-text text-white">
       <Container>
         <div className="grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
@@ -31,15 +31,17 @@ export default function Footer() {
               {site.name}
             </Link>
 
-            <p className="mt-3 text-sm text-gray-300">{site.tagline}</p>
+            <p className="mt-3 text-sm text-white/75">
+              {site.tagline}
+            </p>
 
-            <p className="mt-5 max-w-xs text-sm leading-6 text-gray-400">
+            <p className="mt-5 max-w-xs text-sm leading-6 text-white/60">
               {site.description}
             </p>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-300">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
               Quick Links
             </h3>
 
@@ -48,7 +50,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 transition hover:text-white"
+                    className="text-sm text-white/60 transition-colors hover:text-primary"
                   >
                     {item.label}
                   </Link>
@@ -58,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-300">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
               Products
             </h3>
 
@@ -67,7 +69,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 transition hover:text-white"
+                    className="text-sm text-white/60 transition-colors hover:text-primary"
                   >
                     {item.label}
                   </Link>
@@ -77,26 +79,28 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-300">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
               Contact
             </h3>
 
-            <ul className="mt-5 space-y-3 text-sm text-gray-400">
+            <ul className="mt-5 space-y-3 text-sm text-white/60">
               <li>{site.location}</li>
+
               <li>
                 <a
                   href={`mailto:${site.email}`}
-                  className="transition hover:text-white"
+                  className="transition-colors hover:text-primary"
                 >
                   {site.email}
                 </a>
               </li>
+
               <li>{site.domain}</li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 py-6 text-center text-sm text-gray-500">
+        <div className="border-t border-white/10 py-6 text-center text-sm text-white/40">
           © {new Date().getFullYear()} {site.name}. All rights reserved.
         </div>
       </Container>

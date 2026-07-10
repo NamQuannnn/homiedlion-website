@@ -22,7 +22,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200/80 bg-[#FAF8F5]/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border/80 bg-background/90 backdrop-blur-md">
       <Container>
         <div className="flex h-[72px] items-center justify-between">
           <Link
@@ -40,11 +40,11 @@ export default function Header() {
             />
 
             <div className="hidden sm:block">
-              <p className="text-lg font-bold leading-none tracking-tight text-[#2C2C2C]">
+              <p className="text-lg font-bold leading-none tracking-tight text-text">
                 {site.name}
               </p>
 
-              <p className="mt-1 text-xs uppercase tracking-[0.18em] text-[#7A5A2B]">
+              <p className="mt-1 text-xs uppercase tracking-[0.18em] text-primary">
                 {site.tagline}
               </p>
             </div>
@@ -58,8 +58,8 @@ export default function Header() {
                   href={item.href}
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActive(item.href)
-                      ? "text-[#7A5A2B]"
-                      : "text-gray-600 hover:text-[#7A5A2B]"
+                      ? "text-primary"
+                      : "text-text-secondary hover:text-primary"
                   }`}
                 >
                   {item.label}
@@ -67,23 +67,24 @@ export default function Header() {
               ))}
             </nav>
 
-            <div className="h-5 w-px bg-gray-300" />
+            <div className="h-5 w-px bg-border" />
 
             <LanguageSwitcher />
           </div>
 
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-white text-[#2C2C2C] md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text md:hidden"
             onClick={() => setIsOpen((value) => !value)}
             aria-label="Toggle navigation menu"
+            aria-expanded={isOpen}
           >
             {isOpen ? "✕" : "☰"}
           </button>
         </div>
 
         {isOpen && (
-          <div className="border-t border-gray-200 py-4 md:hidden">
+          <div className="border-t border-border py-4 md:hidden">
             <nav className="flex flex-col gap-2">
               {enabledNavItems.map((item) => (
                 <Link
@@ -92,8 +93,8 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                   className={`rounded-xl px-4 py-3 text-sm font-medium transition ${
                     isActive(item.href)
-                      ? "bg-white text-[#7A5A2B]"
-                      : "text-gray-600 hover:bg-white hover:text-[#7A5A2B]"
+                      ? "bg-surface text-primary"
+                      : "text-text-secondary hover:bg-surface hover:text-primary"
                   }`}
                 >
                   {item.label}
@@ -101,7 +102,7 @@ export default function Header() {
               ))}
             </nav>
 
-            <div className="mt-4 border-t border-gray-200 pt-4">
+            <div className="mt-4 border-t border-border pt-4">
               <LanguageSwitcher />
             </div>
           </div>
