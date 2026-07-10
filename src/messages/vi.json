@@ -11,9 +11,9 @@
   },
 
   "Metadata": {
-    "description": "Homie D'Lion Group chuyên kinh doanh điều thô, nhân điều, dịch vụ vận chuyển và cung cấp thông tin thị trường điều.",
+    "description": "Homie D'Lion Group chuyên kinh doanh điều thô, điều nhân, dịch vụ vận chuyển và cung cấp thông tin thị trường điều.",
     "shortDescription": "Thương mại điều toàn cầu và thông tin thị trường.",
-    "keywords": "điều thô, nhân điều, hạt điều, RCN, điều Việt Nam, xuất khẩu điều, vận chuyển, thông tin thị trường, Homie D'Lion Group"
+    "keywords": "điều thô, điều nhân, hạt điều, RCN, điều Việt Nam, xuất khẩu điều, vận chuyển, thông tin thị trường, Homie D'Lion Group"
   },
 
   "Site": {
@@ -31,7 +31,7 @@
   "About": {
     "eyebrow": "VỀ CHÚNG TÔI",
     "title": "Đối tác tin cậy trong thương mại điều toàn cầu",
-    "description1": "Homie D'Lion Group cam kết cung cấp Điều thô (RCN), Nhân điều và các giải pháp logistics chất lượng cao cho khách hàng trên toàn thế giới.",
+    "description1": "Homie D'Lion Group cam kết cung cấp Điều thô (RCN), Điều nhân và các giải pháp logistics chất lượng cao cho khách hàng trên toàn thế giới.",
     "description2": "Chúng tôi tập trung vào sự minh bạch, quan hệ hợp tác lâu dài và cung cấp thông tin thị trường giúp khách hàng đưa ra quyết định kinh doanh hiệu quả hơn.",
     "features": {
       "premiumProducts": "Sản phẩm chất lượng cao",
@@ -59,8 +59,8 @@
       "description": "Điều thô chất lượng cao được thu mua từ các vùng nguyên liệu uy tín tại Tây Phi."
     },
     "cashewKernels": {
-      "title": "Nhân điều",
-      "description": "Nhân điều chế biến đạt tiêu chuẩn quốc tế, đáp ứng yêu cầu xuất khẩu."
+      "title": "Điều nhân",
+      "description": "Điều nhân chế biến đạt tiêu chuẩn quốc tế, đáp ứng yêu cầu xuất khẩu."
     },
     "freightServices": {
       "title": "Dịch vụ Logistics",
@@ -90,7 +90,7 @@
     },
     "trends": {
       "title": "Xu hướng giá",
-      "description": "Theo dõi biến động giá điều thô và nhân điều tại các thị trường trọng điểm.",
+      "description": "Theo dõi biến động giá điều thô và điều nhân tại các thị trường trọng điểm.",
       "button": "Xem biểu đồ"
     },
     "news": {
@@ -131,8 +131,8 @@
     "description": "Kết nối các nhà máy chế biến tại Việt Nam với những nhà cung cấp điều thô phù hợp từ các vùng nguyên liệu tại Châu Phi."
   },
   "cashewKernels": {
-    "title": "Nhân điều",
-    "description": "Kết nối các nhà máy và đơn vị xuất khẩu nhân điều Việt Nam với những khách mua đáng tin cậy trên thị trường quốc tế."
+    "title": "Điều nhân",
+    "description": "Kết nối các nhà máy và đơn vị xuất khẩu điều nhân Việt Nam với những khách mua đáng tin cậy trên thị trường quốc tế."
   },
   "freightServices": {
     "title": "Dịch vụ vận chuyển",
