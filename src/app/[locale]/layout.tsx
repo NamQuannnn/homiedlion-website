@@ -4,8 +4,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import { routing } from "@/i18n/routing";
 
 import "@/app/globals.css";
@@ -45,31 +45,31 @@ export const metadata: Metadata = {
   ],
 
   creator: "Homie D'Lion Group",
-
   publisher: "Homie D'Lion Group",
 
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: [
+      {
+        url: "/icon.png?v=2",
+        type: "image/png",
+        sizes: "512x512",
+      },
+    ],
+    shortcut: "/icon.png?v=2",
+    apple: "/icon.png?v=2",
   },
+
 
   openGraph: {
     title: "Homie D'Lion Group",
-    description:
-      "Global Cashew Trading & Market Intelligence.",
-
+    description: "Global Cashew Trading & Market Intelligence.",
     url: "https://homiedlion.com",
-
     siteName: "Homie D'Lion Group",
-
     locale: "en_US",
-
     type: "website",
-
     images: [
       {
-        url: "/favicon.png",
+        url: "/dandelion-favicon-v3.png",
         width: 512,
         height: 512,
         alt: "Homie D'Lion Group",
@@ -78,14 +78,10 @@ export const metadata: Metadata = {
   },
 
   twitter: {
-    card: "summary_large_image",
-
+    card: "summary",
     title: "Homie D'Lion Group",
-
-    description:
-      "Global Cashew Trading & Market Intelligence.",
-
-    images: ["/favicon.png"],
+    description: "Global Cashew Trading & Market Intelligence.",
+    images: ["/icon.png?v=2"],
   },
 };
 
@@ -107,7 +103,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${inter.className} flex min-h-screen flex-col bg-[#FAF8F5]`}
+        className={`${inter.className} flex min-h-screen flex-col bg-background text-text`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header />

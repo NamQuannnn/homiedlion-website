@@ -24,30 +24,21 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-background/90 backdrop-blur-md">
       <Container>
-        <div className="flex h-[72px] items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-3 transition-opacity hover:opacity-90"
+            className="flex items-center transition-opacity hover:opacity-90"
             onClick={() => setIsOpen(false)}
+            aria-label={`${site.name} home`}
           >
             <Image
               src="/logo/homie-dlion-logo.png"
               alt={site.name}
-              width={46}
-              height={46}
+              width={320}
+              height={120}
               priority
-              className="h-11 w-auto object-contain"
+              className="h-16 w-auto object-contain sm:h-40"
             />
-
-            <div className="hidden sm:block">
-              <p className="text-lg font-bold leading-none tracking-tight text-text">
-                {site.name}
-              </p>
-
-              <p className="mt-1 text-xs uppercase tracking-[0.18em] text-primary">
-                {site.tagline}
-              </p>
-            </div>
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">
