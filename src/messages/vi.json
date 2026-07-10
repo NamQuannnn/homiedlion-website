@@ -120,6 +120,32 @@
     "sendInquiry": "Gửi yêu cầu"
   },
 
+  "ProductsPage": {
+  "title": "Sản phẩm & Dịch vụ",
+  "breadcrumb": "Sản phẩm",
+  "eyebrow": "SẢN PHẨM & DỊCH VỤ",
+  "heading": "Kết nối giao thương trong ngành điều",
+  "description": "Homie D'Lion Group đóng vai trò là đơn vị môi giới và hỗ trợ giao dịch, kết nối các nhà máy chế biến điều tại Việt Nam với nhà cung cấp điều thô uy tín tại Châu Phi, khách mua điều nhân trên toàn thế giới và các đối tác logistics phù hợp.",
+  "rawCashewNuts": {
+    "title": "Điều thô",
+    "description": "Kết nối các nhà máy chế biến tại Việt Nam với những nhà cung cấp điều thô phù hợp từ các vùng nguyên liệu tại Châu Phi."
+  },
+  "cashewKernels": {
+    "title": "Nhân điều",
+    "description": "Kết nối các nhà máy và đơn vị xuất khẩu nhân điều Việt Nam với những khách mua đáng tin cậy trên thị trường quốc tế."
+  },
+  "freightServices": {
+    "title": "Dịch vụ vận chuyển",
+    "description": "Hỗ trợ kết nối và phối hợp với các đối tác vận chuyển trong quá trình giao nhận hàng hóa quốc tế."
+  },
+  "learnMore": "Tìm hiểu thêm",
+  "brokerage": {
+    "title": "Vai trò của Homie D'Lion",
+    "description": "Homie D'Lion hỗ trợ kết nối các bên, cung cấp thông tin thị trường, hỗ trợ trao đổi điều khoản và đồng hành trong quá trình thực hiện giao dịch.",
+    "button": "Liên hệ với chúng tôi"
+  }
+},
+
   "Footer": {
     "quickLinks": "Liên kết nhanh",
     "products": "Sản phẩm",

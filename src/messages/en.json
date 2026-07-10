@@ -120,6 +120,32 @@
     "sendInquiry": "Send Inquiry"
   },
 
+  "ProductsPage": {
+  "title": "Products & Services",
+  "breadcrumb": "Products",
+  "eyebrow": "PRODUCTS & SERVICES",
+  "heading": "Connecting opportunities across the cashew trade",
+  "description": "Homie D'Lion Group operates as a brokerage and trade facilitation company, connecting Vietnamese cashew processors with trusted raw cashew nut suppliers in Africa, reliable cashew kernel buyers worldwide and suitable logistics partners.",
+  "rawCashewNuts": {
+    "title": "Raw Cashew Nuts",
+    "description": "Connecting Vietnamese processors with suitable raw cashew nut suppliers from key sourcing regions across Africa."
+  },
+  "cashewKernels": {
+    "title": "Cashew Kernels",
+    "description": "Connecting Vietnamese cashew processors and exporters with reliable kernel buyers in international markets."
+  },
+  "freightServices": {
+    "title": "Freight Services",
+    "description": "Supporting coordination and connections with logistics partners throughout international cargo movements."
+  },
+  "learnMore": "Learn More",
+  "brokerage": {
+    "title": "Our Role",
+    "description": "Homie D'Lion supports business connections, provides market information, facilitates discussions on commercial terms and accompanies the parties throughout the transaction process.",
+    "button": "Contact Us"
+  }
+},
+
   "Footer": {
     "quickLinks": "Quick Links",
     "products": "Products",

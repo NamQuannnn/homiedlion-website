@@ -1,23 +1,104 @@
-import PageHeader from '@/components/ui/PageHeader';
-import { theme } from '@/lib/theme';
+import { getTranslations } from "next-intl/server";
 
-export default function ProductsPage() {
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
+import Container from "@/components/ui/Container";
+import PageHeader from "@/components/ui/PageHeader";
+import Section from "@/components/ui/Section";
+
+export default async function ProductsPage() {
+  const t = await getTranslations("ProductsPage");
+
+  const products = [
+    {
+      title: t("rawCashewNuts.title"),
+      description: t("rawCashewNuts.description"),
+      icon: "🌰",
+      href: "/products/raw-cashew-nuts",
+    },
+    {
+      title: t("cashewKernels.title"),
+      description: t("cashewKernels.description"),
+      icon: "🥜",
+      href: "/products/cashew-kernels",
+    },
+    {
+      title: t("freightServices.title"),
+      description: t("freightServices.description"),
+      icon: "🚢",
+      href: "/products/freight-services",
+    },
+  ];
+
   return (
     <div className="w-full flex-grow">
-      <PageHeader 
-        title="Our Products" 
-        breadcrumbs={[{ label: 'Products', href: '/products' }]} 
+      <PageHeader
+        title={t("title")}
+        breadcrumbs={[
+          {
+            label: t("breadcrumb"),
+            href: "/products",
+          },
+        ]}
       />
-      <section className={`bg-white ${theme.layout.section}`}>
-        <div className={theme.layout.container}>
-          <div className="max-w-3xl">
-            <h2 className={theme.typography.h3}>Premium Agricultural Products & Logistics</h2>
-            <p className={`${theme.typography.bodyText} mt-6`}>
-              Placeholder content for the main Products page. An overview of our offerings in Raw Cashew Nuts, Cashew Kernels, and global Freight Services will be displayed here.
+
+      <Section className="bg-surface">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+              {t("eyebrow")}
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-text sm:text-4xl">
+              {t("heading")}
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-text-secondary">
+              {t("description")}
             </p>
           </div>
-        </div>
-      </section>
+
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {products.map((product) => (
+              <Card key={product.href} className="flex h-full flex-col">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
+                  {product.icon}
+                </div>
+
+                <div className="flex-grow">
+                  <h3 className="text-xl font-semibold text-text">
+                    {product.title}
+                  </h3>
+
+                  <p className="mt-4 text-base leading-7 text-text-secondary">
+                    {product.description}
+                  </p>
+                </div>
+
+                <div className="mt-8">
+                  <Button href={product.href} variant="outline">
+                    {t("learnMore")} →
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-16 rounded-3xl border border-border bg-background p-8 text-center sm:p-10">
+            <h3 className="text-2xl font-bold text-text">
+              {t("brokerage.title")}
+            </h3>
+
+            <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-text-secondary">
+              {t("brokerage.description")}
+            </p>
+
+            <div className="mt-8">
+              <Button href="/contact">{t("brokerage.button")}</Button>
+            </div>
+          </div>
+        </Container>
+      </Section>
     </div>
   );
 }
