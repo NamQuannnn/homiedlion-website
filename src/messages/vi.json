@@ -4,15 +4,30 @@
     "about": "Giới thiệu",
     "products": "Sản phẩm",
     "marketInsights": "Thông tin Thị trường",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "openMenu": "Mở menu điều hướng",
+    "closeMenu": "Đóng menu điều hướng",
+    "homeAria": "Trang chủ Homie D'Lion Group"
   },
+
+  "Metadata": {
+    "description": "Homie D'Lion Group chuyên kinh doanh điều thô, nhân điều, dịch vụ vận chuyển và cung cấp thông tin thị trường điều.",
+    "shortDescription": "Thương mại điều toàn cầu và thông tin thị trường.",
+    "keywords": "điều thô, nhân điều, hạt điều, RCN, điều Việt Nam, xuất khẩu điều, vận chuyển, thông tin thị trường, Homie D'Lion Group"
+  },
+
+  "Site": {
+    "description": "Thương mại Điều Toàn cầu & Thông tin Thị trường"
+  },
+
   "Hero": {
     "title": "Homie D'Lion Group",
-    "subtitle": "Xây dựng bằng Niềm tin và Nỗ lực",
+    "subtitle": "Built with Trust and Effort",
     "description": "Thương mại Điều Toàn cầu & Thông tin Thị trường",
     "exploreProducts": "Khám phá Sản phẩm",
     "marketInsights": "Thông tin Thị trường"
   },
+
   "About": {
     "eyebrow": "VỀ CHÚNG TÔI",
     "title": "Đối tác tin cậy trong thương mại điều toàn cầu",
@@ -26,6 +41,15 @@
     },
     "learnMore": "Tìm hiểu thêm"
   },
+
+  "AboutPage": {
+    "title": "Về Chúng tôi",
+    "breadcrumb": "Giới thiệu",
+    "heading": "Giới thiệu",
+    "paragraph1": "Được thành lập với mong muốn là cầu nối cho các nhà máy sản xuất điều ở Việt Nam tiếp cận với các nhà cung cấp nguyên liệu điều thô uy tín ở Châu Phi, cũng như các khách mua điều nhân đáng tin cậy trên toàn thế giới, với nguyên vọng mang HẠT ĐIỀU VIỆT NAM đến gần hơn với người tiêu dùng. Chúng tôi đã và vẫn đang cùng nhau thực hiện giấc mơ này với sự uy tín và nỗ lực không ngừng nghỉ.",
+    "paragraph2": "Trải qua hơn 5 năm, chúng tôi vô cùng biết ơn các quý Đối Tác khách hàng đã trao niềm tin và cùng đồng hành suốt quá trình hình thành và phát triển của Homie D’Lion để chúng tôi càng vững vàng hơn trong chặng đường sắp tới, mang đến nhiều giá trị kinh tế cũng như góp phần vào sự phát triển của xã hội."
+  },
+
   "Products": {
     "eyebrow": "SẢN PHẨM",
     "title": "Những gì chúng tôi cung cấp",
@@ -44,6 +68,7 @@
     },
     "learnMore": "Xem thêm"
   },
+
   "MarketInsights": {
     "eyebrow": "THÔNG TIN THỊ TRƯỜNG",
     "title": "Thông tin thị trường điều toàn cầu",
@@ -74,6 +99,7 @@
       "button": "Đọc tin"
     }
   },
+
   "Contact": {
     "eyebrow": "LIÊN HỆ",
     "title": "Hãy cùng hợp tác",
@@ -93,6 +119,7 @@
     "messagePlaceholder": "Chúng tôi có thể hỗ trợ gì cho bạn?",
     "sendInquiry": "Gửi yêu cầu"
   },
+
   "Footer": {
     "quickLinks": "Liên kết nhanh",
     "products": "Sản phẩm",

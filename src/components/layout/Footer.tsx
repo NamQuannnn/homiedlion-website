@@ -1,26 +1,46 @@
-import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 import Container from "@/components/ui/Container";
 import { navigation } from "@/config/navigation";
 import { site } from "@/config/site";
+import { Link } from "@/i18n/routing";
+
+const navigationKeys: Record<string, string> = {
+  "/": "home",
+  "/about": "about",
+  "/products": "products",
+  "/market-insights": "marketInsights",
+  "/contact": "contact",
+};
 
 export default function Footer() {
+  const tFooter = useTranslations("Footer");
+  const tNavigation = useTranslations("Navigation");
+  const tProducts = useTranslations("Products");
+  const tSite = useTranslations("Site");
+
   const enabledNavItems = navigation.filter((item) => item.enabled);
 
   const productLinks = [
     {
-      label: "Raw Cashew Nuts",
+      label: tProducts("rawCashewNuts.title"),
       href: "/products/raw-cashew-nuts",
     },
     {
-      label: "Cashew Kernels",
+      label: tProducts("cashewKernels.title"),
       href: "/products/cashew-kernels",
     },
     {
-      label: "Freight Services",
+      label: tProducts("freightServices.title"),
       href: "/products/freight-services",
     },
   ];
+
+  const getNavigationLabel = (href: string) => {
+    const translationKey = navigationKeys[href];
+
+    return translationKey ? tNavigation(translationKey) : href;
+  };
 
   return (
     <footer className="mt-auto bg-text text-white">
@@ -32,17 +52,17 @@ export default function Footer() {
             </Link>
 
             <p className="mt-3 text-sm text-white/75">
-              {site.tagline}
+              Built with Trust and Effort
             </p>
 
             <p className="mt-5 max-w-xs text-sm leading-6 text-white/60">
-              {site.description}
+              {tSite("description")}
             </p>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
-              Quick Links
+              {tFooter("quickLinks")}
             </h3>
 
             <ul className="mt-5 space-y-3">
@@ -52,7 +72,7 @@ export default function Footer() {
                     href={item.href}
                     className="text-sm text-white/60 transition-colors hover:text-primary"
                   >
-                    {item.label}
+                    {getNavigationLabel(item.href)}
                   </Link>
                 </li>
               ))}
@@ -61,7 +81,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
-              Products
+              {tFooter("products")}
             </h3>
 
             <ul className="mt-5 space-y-3">
@@ -80,7 +100,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
-              Contact
+              {tFooter("contact")}
             </h3>
 
             <ul className="mt-5 space-y-3 text-sm text-white/60">
@@ -95,13 +115,22 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li>{site.domain}</li>
+              <li>
+                <a
+                  href={site.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors hover:text-primary"
+                >
+                  {site.domain}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 py-6 text-center text-sm text-white/40">
-          © {new Date().getFullYear()} {site.name}. All rights reserved.
+          © {new Date().getFullYear()} {site.name}. {tFooter("rights")}
         </div>
       </Container>
     </footer>

@@ -1,27 +1,32 @@
+import { useTranslations } from "next-intl";
+
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
 import Heading from "@/components/ui/Heading";
 import Section from "@/components/ui/Section";
 
 export default function Contact() {
+  const t = useTranslations("Contact");
+
   const contactItems = [
     {
-      label: "Company",
+      label: t("company"),
       value: "Homie D'Lion Group",
       icon: "🏢",
     },
     {
-      label: "Address",
-      value: "11 Street No. 1, Quarter 56, Hiep Binh Ward, Ho Chi Minh City, Vietnam",
+      label: t("address"),
+      value:
+        "11 Street No. 1, Quarter 56, Hiep Binh Ward, Ho Chi Minh City, Vietnam",
       icon: "📍",
     },
     {
-      label: "Email",
+      label: t("email"),
       value: "sales.homiecashews@gmail.com",
       icon: "✉️",
     },
     {
-      label: "Website",
+      label: t("website"),
       value: "homiedlion.com",
       icon: "🌐",
     },
@@ -34,15 +39,15 @@ export default function Contact() {
     <Section className="bg-background">
       <Container>
         <Heading
-          eyebrow="CONTACT US"
-          title="Let's Grow Together"
-          description="Whether you're looking for premium cashew products, reliable logistics, or the latest market insights, our team is ready to help."
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          description={t("description")}
         />
 
         <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <Card>
             <h3 className="mb-8 text-2xl font-bold text-text">
-              Get in Touch
+              {t("getInTouch")}
             </h3>
 
             <div className="space-y-8">
@@ -56,6 +61,7 @@ export default function Contact() {
                     <p className="text-lg font-medium text-text">
                       {item.label}
                     </p>
+
                     <p className="mt-1 text-base leading-7 text-text-secondary">
                       {item.value}
                     </p>
@@ -73,13 +79,14 @@ export default function Contact() {
                     htmlFor="name"
                     className="block text-sm font-medium text-text"
                   >
-                    Full Name
+                    {t("fullName")}
                   </label>
+
                   <input
                     type="text"
                     id="name"
                     className={inputClassName}
-                    placeholder="Your name"
+                    placeholder={t("namePlaceholder")}
                   />
                 </div>
 
@@ -88,13 +95,14 @@ export default function Contact() {
                     htmlFor="company"
                     className="block text-sm font-medium text-text"
                   >
-                    Company
+                    {t("companyField")}
                   </label>
+
                   <input
                     type="text"
                     id="company"
                     className={inputClassName}
-                    placeholder="Your company"
+                    placeholder={t("companyPlaceholder")}
                   />
                 </div>
               </div>
@@ -104,13 +112,14 @@ export default function Contact() {
                   htmlFor="email"
                   className="block text-sm font-medium text-text"
                 >
-                  Email
+                  {t("emailField")}
                 </label>
+
                 <input
                   type="email"
                   id="email"
                   className={inputClassName}
-                  placeholder="you@company.com"
+                  placeholder={t("emailPlaceholder")}
                 />
               </div>
 
@@ -119,13 +128,14 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-sm font-medium text-text"
                 >
-                  Message
+                  {t("message")}
                 </label>
+
                 <textarea
                   id="message"
                   rows={4}
                   className={`${inputClassName} resize-none`}
-                  placeholder="How can we help you?"
+                  placeholder={t("messagePlaceholder")}
                 />
               </div>
 
@@ -133,7 +143,7 @@ export default function Contact() {
                 type="button"
                 className="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary/30"
               >
-                Send Inquiry
+                {t("sendInquiry")}
               </button>
             </form>
           </Card>

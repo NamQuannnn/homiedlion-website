@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
@@ -5,25 +7,24 @@ import Heading from "@/components/ui/Heading";
 import Section from "@/components/ui/Section";
 
 export default function Products() {
+  const t = useTranslations("Products");
+
   const products = [
     {
-      title: "Raw Cashew Nuts",
-      description:
-        "Premium quality RCN sourced from trusted origins including West Africa.",
+      title: t("rawCashewNuts.title"),
+      description: t("rawCashewNuts.description"),
       icon: "🌰",
       link: "/products/raw-cashew-nuts",
     },
     {
-      title: "Cashew Kernels",
-      description:
-        "High-quality processed kernels meeting international export standards.",
+      title: t("cashewKernels.title"),
+      description: t("cashewKernels.description"),
       icon: "🥜",
       link: "/products/cashew-kernels",
     },
     {
-      title: "Freight Services",
-      description:
-        "Reliable global shipping and logistics support for international trade.",
+      title: t("freightServices.title"),
+      description: t("freightServices.description"),
       icon: "🚢",
       link: "/products/freight-services",
     },
@@ -33,9 +34,9 @@ export default function Products() {
     <Section className="bg-background">
       <Container>
         <Heading
-          eyebrow="OUR PRODUCTS"
-          title="What We Offer"
-          description="Homie D'Lion Group supplies premium agricultural products and logistics services for customers around the world."
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          description={t("description")}
         />
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -57,7 +58,7 @@ export default function Products() {
 
               <div className="mt-8">
                 <Button href={product.link} variant="outline">
-                  Learn More →
+                  {t("learnMore")} →
                 </Button>
               </div>
             </Card>

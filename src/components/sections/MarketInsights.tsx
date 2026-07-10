@@ -1,32 +1,33 @@
+import { useTranslations } from "next-intl";
+
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 
 export default function MarketInsights() {
+  const t = useTranslations("MarketInsights");
+
   const insights = [
     {
-      title: "Market Reports",
-      description:
-        "Weekly and monthly cashew market analysis for better trading decisions.",
+      title: t("reports.title"),
+      description: t("reports.description"),
       icon: "📄",
-      buttonText: "Read Reports",
+      buttonText: t("reports.button"),
       link: "/market-insights/reports",
     },
     {
-      title: "Price Trends",
-      description:
-        "Track RCN and kernel price movements across key origins and markets.",
+      title: t("trends.title"),
+      description: t("trends.description"),
       icon: "📈",
-      buttonText: "View Charts",
+      buttonText: t("trends.button"),
       link: "/market-insights/trends",
     },
     {
-      title: "Industry News",
-      description:
-        "Latest updates from global cashew origins, buyers, exporters and logistics.",
+      title: t("news.title"),
+      description: t("news.description"),
       icon: "📰",
-      buttonText: "Read News",
+      buttonText: t("news.button"),
       link: "/market-insights/news",
     },
   ];
@@ -37,23 +38,24 @@ export default function MarketInsights() {
         <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-end">
           <div>
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
-              MARKET INSIGHTS
+              {t("eyebrow")}
             </p>
 
             <h2 className="text-4xl font-bold tracking-tight text-text sm:text-5xl">
-              Cashew market intelligence for global trade
+              {t("title")}
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-text-secondary">
-              Stay informed with market reports, price trends and industry news
-              from Homie D&apos;Lion Group.
+              {t("description")}
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button href="/market-insights">Explore Insights</Button>
+              <Button href="/market-insights">
+                {t("exploreInsights")}
+              </Button>
 
               <Button href="/market-insights/reports" variant="outline">
-                View Reports
+                {t("viewReports")}
               </Button>
             </div>
           </div>
@@ -61,23 +63,29 @@ export default function MarketInsights() {
           <div className="rounded-3xl border border-border bg-background p-6 shadow-sm">
             <div className="grid gap-4 sm:grid-cols-3">
               <div>
-                <p className="text-3xl font-bold text-text">3</p>
+                <p className="text-3xl font-bold text-text">
+                  {t("stats.categoriesValue")}
+                </p>
                 <p className="mt-1 text-sm text-text-secondary">
-                  Insight categories
+                  {t("stats.categoriesLabel")}
                 </p>
               </div>
 
               <div>
-                <p className="text-3xl font-bold text-text">24/7</p>
+                <p className="text-3xl font-bold text-text">
+                  {t("stats.trackingValue")}
+                </p>
                 <p className="mt-1 text-sm text-text-secondary">
-                  Market tracking
+                  {t("stats.trackingLabel")}
                 </p>
               </div>
 
               <div>
-                <p className="text-3xl font-bold text-text">Global</p>
+                <p className="text-3xl font-bold text-text">
+                  {t("stats.coverageValue")}
+                </p>
                 <p className="mt-1 text-sm text-text-secondary">
-                  Cashew coverage
+                  {t("stats.coverageLabel")}
                 </p>
               </div>
             </div>

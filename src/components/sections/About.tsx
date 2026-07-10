@@ -1,14 +1,18 @@
+import { useTranslations } from "next-intl";
+
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import Heading from "@/components/ui/Heading";
 import Section from "@/components/ui/Section";
 
 export default function About() {
+  const t = useTranslations("About");
+
   const features = [
-    "Premium Products",
-    "Reliable Supply Chain",
-    "Global Trading Experience",
-    "Market Intelligence",
+    t("features.premiumProducts"),
+    t("features.reliableSupplyChain"),
+    t("features.globalTradingExperience"),
+    t("features.marketIntelligence"),
   ];
 
   return (
@@ -27,21 +31,18 @@ export default function About() {
 
           <div className="w-full space-y-8 text-center lg:w-1/2 lg:text-left">
             <Heading
-              eyebrow="ABOUT US"
-              title="Trusted Partner in Global Cashew Trade"
+              eyebrow={t("eyebrow")}
+              title={t("title")}
               center={false}
             />
 
             <div className="space-y-6">
               <p className="text-base leading-7 text-text-secondary">
-                Homie D&apos;Lion Group is committed to providing premium Raw
-                Cashew Nuts, Cashew Kernels, and reliable logistics solutions to
-                customers worldwide.
+                {t("description1")}
               </p>
 
               <p className="text-base leading-7 text-text-secondary">
-                Our focus is transparency, long-term partnerships, and market
-                intelligence that helps clients make better business decisions.
+                {t("description2")}
               </p>
             </div>
 
@@ -55,13 +56,15 @@ export default function About() {
                     ✔
                   </span>
 
-                  <span className="text-[1.05rem] font-medium">{feature}</span>
+                  <span className="text-[1.05rem] font-medium">
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
 
             <div className="flex justify-center pt-6 lg:justify-start">
-              <Button href="/about">Learn More</Button>
+              <Button href="/about">{t("learnMore")}</Button>
             </div>
           </div>
         </div>

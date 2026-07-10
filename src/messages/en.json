@@ -4,8 +4,22 @@
     "about": "About",
     "products": "Products",
     "marketInsights": "Market Insights",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "homeAria": "Homie D'Lion Group home"
   },
+
+  "Metadata": {
+    "description": "Homie D'Lion Group specializes in Raw Cashew Nuts, Cashew Kernels, Freight Services and Cashew Market Intelligence.",
+    "shortDescription": "Global Cashew Trading & Market Intelligence.",
+    "keywords": "Raw Cashew Nuts, Cashew Kernels, Cashew, RCN, Vietnam Cashew, Cashew Export, Freight, Market Intelligence, Homie D'Lion Group"
+  },
+
+  "Site": {
+    "description": "Global Cashew Trading & Market Intelligence"
+  },
+
   "Hero": {
     "title": "Homie D'Lion Group",
     "subtitle": "Built with Trust and Effort",
@@ -13,6 +27,7 @@
     "exploreProducts": "Explore Products",
     "marketInsights": "Market Insights"
   },
+
   "About": {
     "eyebrow": "ABOUT US",
     "title": "Trusted Partner in Global Cashew Trade",
@@ -26,6 +41,15 @@
     },
     "learnMore": "Learn More"
   },
+
+  "AboutPage": {
+    "title": "About Us",
+    "breadcrumb": "About",
+    "heading": "About Homie D'Lion Group",
+    "paragraph1": "Founded with the vision of connecting Vietnamese cashew manufacturers with trusted cashew nut suppliers in West Africa, as well as reliable cashew kernel buyers worldwide, with the goal of bringing Vietnamese cashew nuts closer to consumers. We have been and continue to work together to make this dream a reality with unwavering trust and relentless effort.",
+    "paragraph2": "For more than 5 years, we have been immensely grateful to our valued partners and customers who have placed their trust in us and accompanied Homie D'Lion throughout its formation and development. Their support has made us stronger for the journey ahead, enabling us to create greater economic value and contribute to the development of society."
+  },
+
   "Products": {
     "eyebrow": "OUR PRODUCTS",
     "title": "What We Offer",
@@ -44,6 +68,7 @@
     },
     "learnMore": "Learn More"
   },
+
   "MarketInsights": {
     "eyebrow": "MARKET INSIGHTS",
     "title": "Cashew market intelligence for global trade",
@@ -74,6 +99,7 @@
       "button": "Read News"
     }
   },
+
   "Contact": {
     "eyebrow": "CONTACT US",
     "title": "Let's Grow Together",
@@ -93,6 +119,7 @@
     "messagePlaceholder": "How can we help you?",
     "sendInquiry": "Send Inquiry"
   },
+
   "Footer": {
     "quickLinks": "Quick Links",
     "products": "Products",
