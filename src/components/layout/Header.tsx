@@ -2,56 +2,38 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 
+import { Link, usePathname } from "@/i18n/routing";
 import Container from "@/components/ui/Container";
 import { navigation } from "@/config/navigation";
-import { Link, usePathname } from "@/i18n/routing";
+import { site } from "@/config/site";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const navigationKeys: Record<string, string> = {
-  "/": "home",
-  "/about": "about",
-  "/products": "products",
-  "/market-insights": "marketInsights",
-  "/contact": "contact",
-};
-
 export default function Header() {
-  const t = useTranslations("Navigation");
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const enabledNavItems = navigation.filter((item) => item.enabled);
 
   const isActive = (href: string) => {
-    if (href === "/") {
-      return pathname === "/";
-    }
-
+    if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
-  };
-
-  const getNavigationLabel = (href: string) => {
-    const translationKey = navigationKeys[href];
-
-    return translationKey ? t(translationKey) : href;
   };
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-background/90 backdrop-blur-md">
       <Container>
-        <div className="flex h-24 items-center justify-between">
+        <div className="flex h-25 items-center justify-between">
           <Link
             href="/"
             className="flex items-center transition-opacity hover:opacity-90"
             onClick={() => setIsOpen(false)}
-            aria-label={t("homeAria")}
+            aria-label={`${site.name} home`}
           >
             <Image
               src="/logo/homie-dlion-logo.png"
-              alt="Homie D'Lion Group"
+              alt={site.name}
               width={320}
               height={120}
               priority
@@ -71,7 +53,7 @@ export default function Header() {
                       : "text-text-secondary hover:text-primary"
                   }`}
                 >
-                  {getNavigationLabel(item.href)}
+                  {item.label}
                 </Link>
               ))}
             </nav>
@@ -85,7 +67,7 @@ export default function Header() {
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text md:hidden"
             onClick={() => setIsOpen((value) => !value)}
-            aria-label={isOpen ? t("closeMenu") : t("openMenu")}
+            aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
             {isOpen ? "✕" : "☰"}
@@ -106,7 +88,7 @@ export default function Header() {
                       : "text-text-secondary hover:bg-surface hover:text-primary"
                   }`}
                 >
-                  {getNavigationLabel(item.href)}
+                  {item.label}
                 </Link>
               ))}
             </nav>

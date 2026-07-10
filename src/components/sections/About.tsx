@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 
+import AboutSlider from "@/components/sections/AboutSlider";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import Heading from "@/components/ui/Heading";
@@ -21,10 +22,8 @@ export default function About() {
         <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-24">
           <div className="w-full lg:w-1/2">
             <div className="relative mx-auto aspect-[4/3] w-full max-w-md sm:aspect-square lg:aspect-[4/5] lg:max-w-none">
-              <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-3xl border border-border bg-background shadow-sm">
-                <span className="text-base leading-7 text-text-secondary">
-                  [Image Placeholder]
-                </span>
+              <div className="absolute inset-0 overflow-hidden rounded-3xl border border-border shadow-sm">
+                <AboutSlider />
               </div>
             </div>
           </div>
