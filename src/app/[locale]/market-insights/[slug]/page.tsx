@@ -1,12 +1,19 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import {
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
 import Section from "@/components/ui/Section";
+import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/routing";
-import { getReport, getReportSlugs } from "@/lib/reports";
+import {
+  getReport,
+  getReportSlugs,
+} from "@/lib/reports";
 
 type ReportPageProps = {
   params: Promise<{
@@ -18,13 +25,29 @@ type ReportPageProps = {
 export async function generateStaticParams() {
   const slugs = await getReportSlugs();
 
-  return slugs.map((slug) => ({ slug }));
+  return routing.locales.flatMap((locale) =>
+    slugs.map((slug) => ({
+      locale,
+      slug,
+    }))
+  );
 }
 
 export default async function ReportPage({
   params,
 }: ReportPageProps) {
   const { locale, slug } = await params;
+
+  if (
+    !routing.locales.includes(
+      locale as (typeof routing.locales)[number]
+    )
+  ) {
+    notFound();
+  }
+
+  // Phải gọi trước getTranslations
+  setRequestLocale(locale);
 
   const t = await getTranslations({
     locale,
