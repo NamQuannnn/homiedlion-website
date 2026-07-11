@@ -1,7 +1,52 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 import PageHeader from "@/components/ui/PageHeader";
 import { theme } from "@/lib/theme";
+
+type PageProps = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "PageMetadata.about",
+  });
+
+  const url = `https://homiedlion.com/${locale}/about`;
+
+  return {
+    title: t("title"),
+    description: t("description"),
+
+    alternates: {
+      canonical: url,
+      languages: {
+        vi: "https://homiedlion.com/vi/about",
+        en: "https://homiedlion.com/en/about",
+      },
+    },
+
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+      type: "website",
+    },
+
+    twitter: {
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 export default async function AboutPage() {
   const t = await getTranslations("AboutPage");
@@ -25,11 +70,15 @@ export default async function AboutPage() {
               {t("heading")}
             </h2>
 
-            <p className={`${theme.typography.bodyText} mt-8 whitespace-pre-line`}>
+            <p
+              className={`${theme.typography.bodyText} mt-8 whitespace-pre-line`}
+            >
               {t("paragraph1")}
             </p>
 
-            <p className={`${theme.typography.bodyText} mt-6 whitespace-pre-line`}>
+            <p
+              className={`${theme.typography.bodyText} mt-6 whitespace-pre-line`}
+            >
               {t("paragraph2")}
             </p>
           </div>

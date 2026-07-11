@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import {
   getTranslations,
@@ -8,12 +9,13 @@ import { notFound } from "next/navigation";
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
 import Section from "@/components/ui/Section";
-import { routing } from "@/i18n/routing";
-import { Link } from "@/i18n/routing";
+import { Link, routing } from "@/i18n/routing";
 import {
   getReport,
   getReportSlugs,
 } from "@/lib/reports";
+
+const BASE_URL = "https://homiedlion.com";
 
 type ReportPageProps = {
   params: Promise<{
@@ -21,6 +23,14 @@ type ReportPageProps = {
     slug: string;
   }>;
 };
+
+function isValidLocale(
+  locale: string
+): locale is (typeof routing.locales)[number] {
+  return routing.locales.includes(
+    locale as (typeof routing.locales)[number]
+  );
+}
 
 export async function generateStaticParams() {
   const slugs = await getReportSlugs();
@@ -33,20 +43,69 @@ export async function generateStaticParams() {
   );
 }
 
+export async function generateMetadata({
+  params,
+}: ReportPageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+
+  if (!isValidLocale(locale)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
+
+  const report = await getReport(slug, locale);
+
+  if (!report) {
+    notFound();
+  }
+
+  const pageUrl = `${BASE_URL}/${locale}/market-insights/${slug}`;
+  const vietnameseUrl = `${BASE_URL}/vi/market-insights/${slug}`;
+  const englishUrl = `${BASE_URL}/en/market-insights/${slug}`;
+
+  return {
+    title: report.title,
+    description: report.summary,
+
+    alternates: {
+      canonical: pageUrl,
+      languages: {
+        vi: vietnameseUrl,
+        en: englishUrl,
+      },
+    },
+
+    openGraph: {
+      title: report.title,
+      description: report.summary,
+      url: pageUrl,
+      siteName: "Homie D'Lion Group",
+      locale: locale === "vi" ? "vi_VN" : "en_US",
+      alternateLocale:
+        locale === "vi" ? ["en_US"] : ["vi_VN"],
+      type: "article",
+      publishedTime: report.publishedAt,
+      authors: ["Homie D'Lion Group"],
+    },
+
+    twitter: {
+      card: "summary",
+      title: report.title,
+      description: report.summary,
+    },
+  };
+}
+
 export default async function ReportPage({
   params,
 }: ReportPageProps) {
   const { locale, slug } = await params;
 
-  if (
-    !routing.locales.includes(
-      locale as (typeof routing.locales)[number]
-    )
-  ) {
+  if (!isValidLocale(locale)) {
     notFound();
   }
 
-  // Phải gọi trước getTranslations
   setRequestLocale(locale);
 
   const t = await getTranslations({

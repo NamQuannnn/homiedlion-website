@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 import Button from "@/components/ui/Button";
@@ -5,6 +6,50 @@ import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
 import Section from "@/components/ui/Section";
+
+type PageProps = {
+  params: Promise<{
+    locale: string;
+  }>;
+};
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "PageMetadata.products",
+  });
+
+  const url = `https://homiedlion.com/${locale}/products`;
+
+  return {
+    title: t("title"),
+    description: t("description"),
+
+    alternates: {
+      canonical: url,
+      languages: {
+        vi: "https://homiedlion.com/vi/products",
+        en: "https://homiedlion.com/en/products",
+      },
+    },
+
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+      type: "website",
+    },
+
+    twitter: {
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 export default async function ProductsPage() {
   const t = await getTranslations("ProductsPage");

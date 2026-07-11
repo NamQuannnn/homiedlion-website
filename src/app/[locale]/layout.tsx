@@ -41,7 +41,6 @@ export async function generateMetadata({
   });
 
   const isVietnamese = locale === "vi";
-  const pageUrl = `https://homiedlion.com/${locale}`;
 
   return {
     metadataBase: new URL("https://homiedlion.com"),
@@ -66,14 +65,6 @@ export async function generateMetadata({
     creator: "Homie D'Lion Group",
     publisher: "Homie D'Lion Group",
 
-    alternates: {
-      canonical: pageUrl,
-      languages: {
-        en: "https://homiedlion.com/en",
-        vi: "https://homiedlion.com/vi",
-      },
-    },
-
     icons: {
       icon: [
         {
@@ -89,7 +80,6 @@ export async function generateMetadata({
     openGraph: {
       title: "Homie D'Lion Group",
       description: t("shortDescription"),
-      url: pageUrl,
       siteName: "Homie D'Lion Group",
       locale: isVietnamese ? "vi_VN" : "en_US",
       alternateLocale: isVietnamese ? ["en_US"] : ["vi_VN"],

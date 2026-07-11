@@ -16,6 +16,29 @@
     "keywords": "Raw Cashew Nuts, Cashew Kernels, Cashew, RCN, Vietnam Cashew, Cashew Export, Freight, Market Intelligence, Homie D'Lion Group"
   },
 
+  "PageMetadata": {
+    "home": {
+      "title": "Homie D'Lion Group",
+      "description": "Homie D'Lion Group connects Vietnamese cashew processors with trusted raw cashew nut suppliers and reliable cashew kernel buyers worldwide."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about Homie D'Lion Group and our journey of connecting trusted partners across the global cashew industry."
+    },
+    "products": {
+      "title": "Products and Services",
+      "description": "Explore Homie D'Lion Group's brokerage support for raw cashew nuts, cashew kernels and international logistics."
+    },
+    "marketInsights": {
+      "title": "Cashew Market Reports",
+      "description": "Read the latest cashew market reports, analysis and developments from Vietnam and global markets."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact Homie D'Lion Group regarding raw cashew nuts, cashew kernels, logistics and market intelligence."
+    }
+  },
+
   "Site": {
     "description": "Global Cashew Trading & Market Intelligence"
   },
@@ -69,6 +92,32 @@
     "learnMore": "Learn More"
   },
 
+  "ProductsPage": {
+    "title": "Products & Services",
+    "breadcrumb": "Products",
+    "eyebrow": "PRODUCTS & SERVICES",
+    "heading": "Connecting opportunities across the cashew trade",
+    "description": "Homie D'Lion Group operates as a brokerage and trade facilitation company, connecting Vietnamese cashew processors with trusted raw cashew nut suppliers in Africa, reliable cashew kernel buyers worldwide and suitable logistics partners.",
+    "rawCashewNuts": {
+      "title": "Raw Cashew Nuts",
+      "description": "Connecting Vietnamese processors with suitable raw cashew nut suppliers from key sourcing regions across Africa."
+    },
+    "cashewKernels": {
+      "title": "Cashew Kernels",
+      "description": "Connecting Vietnamese cashew processors and exporters with reliable kernel buyers in international markets."
+    },
+    "freightServices": {
+      "title": "Freight Services",
+      "description": "Supporting coordination and connections with logistics partners throughout international cargo movements."
+    },
+    "learnMore": "Learn More",
+    "brokerage": {
+      "title": "Our Role",
+      "description": "Homie D'Lion supports business connections, provides market information, facilitates discussions on commercial terms and accompanies the parties throughout the transaction process.",
+      "button": "Contact Us"
+    }
+  },
+
   "MarketInsights": {
     "eyebrow": "MARKET INSIGHTS",
     "title": "Cashew market intelligence for global trade",
@@ -100,6 +149,21 @@
     }
   },
 
+  "MarketInsightsPage": {
+    "title": "Market Insights",
+    "breadcrumb": "Market Insights",
+    "eyebrow": "REPORT LIBRARY",
+    "heading": "Cashew Market Reports",
+    "description": "A collection of cashew market reports, updates and analysis from Homie D'Lion Group.",
+    "readReport": "Read Report"
+  },
+
+  "ReportDetail": {
+    "library": "Report Library",
+    "download": "Download Report",
+    "back": "Back to Library"
+  },
+
   "Contact": {
     "eyebrow": "CONTACT US",
     "title": "Let's Grow Together",
@@ -120,44 +184,13 @@
     "sendInquiry": "Send Inquiry"
   },
 
-  "ProductsPage": {
-  "title": "Products & Services",
-  "breadcrumb": "Products",
-  "eyebrow": "PRODUCTS & SERVICES",
-  "heading": "Connecting opportunities across the cashew trade",
-  "description": "Homie D'Lion Group operates as a brokerage and trade facilitation company, connecting Vietnamese cashew processors with trusted raw cashew nut suppliers in Africa, reliable cashew kernel buyers worldwide and suitable logistics partners.",
-  "rawCashewNuts": {
-    "title": "Raw Cashew Nuts",
-    "description": "Connecting Vietnamese processors with suitable raw cashew nut suppliers from key sourcing regions across Africa."
+  "ContactPage": {
+    "title": "Contact Us",
+    "breadcrumb": "Contact",
+    "heading": "Get in Touch",
+    "description": "Contact Homie D'Lion Group to discuss raw cashew nuts, cashew kernels, logistics support and cashew market information."
   },
-  "cashewKernels": {
-    "title": "Cashew Kernels",
-    "description": "Connecting Vietnamese cashew processors and exporters with reliable kernel buyers in international markets."
-  },
-  "freightServices": {
-    "title": "Freight Services",
-    "description": "Supporting coordination and connections with logistics partners throughout international cargo movements."
-  },
-  "learnMore": "Learn More",
-  "brokerage": {
-    "title": "Our Role",
-    "description": "Homie D'Lion supports business connections, provides market information, facilitates discussions on commercial terms and accompanies the parties throughout the transaction process.",
-    "button": "Contact Us"
-  }
-},
-  "MarketInsightsPage": {
-    "title": "Market Insights",
-    "breadcrumb": "Market Insights",
-    "eyebrow": "REPORT LIBRARY",
-    "heading": "Cashew Market Reports",
-    "description": "A collection of cashew market reports, updates and analysis from Homie D'Lion Group.",
-    "readReport": "Read Report"
-},
-   "ReportDetail": {
-     "library": "Report Library",
-     "download": "Download PDF",
-     "back": "Back"
-},
+
   "Footer": {
     "quickLinks": "Quick Links",
     "products": "Products",
