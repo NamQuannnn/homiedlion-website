@@ -1,31 +1,59 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://homiedlion.com";
+import { getReportSlugs } from "@/lib/reports";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "",
-    "/about",
-    "/products",
-    "/products/raw-cashew-nuts",
-    "/products/cashew-kernels",
-    "/products/freight-services",
-    "/market-insights",
-    "/contact",
-  ];
+const BASE_URL = "https://homiedlion.com";
+const locales = ["vi", "en"] as const;
 
-  return routes.flatMap((route) => [
-    {
-      url: `${baseUrl}/en${route}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: route === "" ? 1 : 0.8,
-    },
-    {
-      url: `${baseUrl}/vi${route}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: route === "" ? 1 : 0.8,
-    },
-  ]);
+const staticRoutes = [
+  "",
+  "/about",
+  "/products",
+  "/products/raw-cashew-nuts",
+  "/products/cashew-kernels",
+  "/products/freight-services",
+  "/market-insights",
+  "/contact",
+];
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const reportSlugs = await getReportSlugs();
+  const now = new Date();
+
+  const staticPages: MetadataRoute.Sitemap = locales.flatMap((locale) =>
+    staticRoutes.map((route) => ({
+      url: `${BASE_URL}/${locale}${route}`,
+      lastModified: now,
+      changeFrequency: route === "" ? "weekly" : "monthly",
+      priority:
+        route === ""
+          ? 1
+          : route === "/market-insights"
+            ? 0.9
+            : 0.8,
+      alternates: {
+        languages: {
+          vi: `${BASE_URL}/vi${route}`,
+          en: `${BASE_URL}/en${route}`,
+        },
+      },
+    }))
+  );
+
+  const reportPages: MetadataRoute.Sitemap = reportSlugs.flatMap((slug) =>
+    locales.map((locale) => ({
+      url: `${BASE_URL}/${locale}/market-insights/${slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+      alternates: {
+        languages: {
+          vi: `${BASE_URL}/vi/market-insights/${slug}`,
+          en: `${BASE_URL}/en/market-insights/${slug}`,
+        },
+      },
+    }))
+  );
+
+  return [...staticPages, ...reportPages];
 }
