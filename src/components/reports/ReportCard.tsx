@@ -12,11 +12,13 @@ export default function ReportCard({
   locale,
   readLabel,
 }: ReportCardProps) {
+  const language = locale === "vi" ? "vi" : "en";
+
   const formattedDate = new Intl.DateTimeFormat(
-    locale === "vi" ? "vi-VN" : "en-GB",
+    language === "vi" ? "vi-VN" : "en-GB",
     {
       day: "2-digit",
-      month: locale === "vi" ? "2-digit" : "long",
+      month: language === "vi" ? "2-digit" : "long",
       year: "numeric",
     }
   ).format(new Date(`${report.publishedAt}T00:00:00`));
@@ -27,21 +29,19 @@ export default function ReportCard({
         <svg
           viewBox="0 0 64 64"
           aria-hidden="true"
-          className="h-10 w-10"
+          className="h-10 w-10 text-primary"
         >
           <path
             d="M18 8h20l10 10v38H18z"
             fill="white"
             stroke="currentColor"
             strokeWidth="3"
-            className="text-primary"
           />
           <path
             d="M38 8v12h12"
             fill="none"
             stroke="currentColor"
             strokeWidth="3"
-            className="text-primary"
           />
           <path
             d="M24 31h18M24 39h18M24 47h12"
@@ -49,13 +49,12 @@ export default function ReportCard({
             stroke="currentColor"
             strokeWidth="3"
             strokeLinecap="round"
-            className="text-primary"
           />
         </svg>
       </div>
 
       <h2 className="text-xl font-bold leading-snug text-text">
-        {report.title}
+        {report.title[language]}
       </h2>
 
       <time
@@ -66,7 +65,7 @@ export default function ReportCard({
       </time>
 
       <p className="mt-6 flex-grow text-sm leading-7 text-text-secondary">
-        {report.summary}
+        {report.summary[language]}
       </p>
 
       <div className="mt-8 border-t border-border pt-5">

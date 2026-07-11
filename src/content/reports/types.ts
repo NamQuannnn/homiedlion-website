@@ -1,7 +1,28 @@
-export interface Report {
+export type LocalizedText = {
+    vi: string;
+    en: string;
+  };
+  
+  export type ReportContentBlock =
+    | {
+        type: "paragraph";
+        content: LocalizedText;
+      }
+    | {
+        type: "heading";
+        content: LocalizedText;
+      }
+    | {
+        type: "bullets";
+        items: LocalizedText[];
+      };
+  
+  export interface Report {
     slug: string;
-    title: string;
+    title: LocalizedText;
+    period: LocalizedText;
     publishedAt: string;
-    summary: string;
-    file: string;
+    summary: LocalizedText;
+    content: ReportContentBlock[];
+    downloadFile: string;
   }
