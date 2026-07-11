@@ -1,20 +1,16 @@
 import { getLocale, getTranslations } from "next-intl/server";
 
+import ReportCard from "@/components/reports/ReportCard";
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
 import Section from "@/components/ui/Section";
-import ReportCard from "@/components/reports/ReportCard";
-import { reports } from "@/content/reports/reports";
+import { getAllReports } from "@/lib/reports";
 
 export default async function MarketInsightsPage() {
   const locale = await getLocale();
   const t = await getTranslations("MarketInsightsPage");
 
-  const sortedReports = [...reports].sort(
-    (a, b) =>
-      new Date(b.publishedAt).getTime() -
-      new Date(a.publishedAt).getTime()
-  );
+  const reports = await getAllReports(locale);
 
   return (
     <div className="w-full flex-grow">
@@ -45,7 +41,7 @@ export default async function MarketInsightsPage() {
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {sortedReports.map((report) => (
+            {reports.map((report) => (
               <ReportCard
                 key={report.slug}
                 report={report}

@@ -36,3 +36,77 @@ body {
   background: var(--background);
   color: var(--text);
 }
+.report-content {
+  color: #111827;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.report-content p {
+  margin: 0 0 1.5rem;
+  text-align: justify;
+}
+
+.report-content h2 {
+  margin: 2.25rem 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.report-content h3 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.report-content ul,
+.report-content ol {
+  margin: 0 0 1.5rem;
+  padding-left: 2rem;
+}
+
+.report-content ul {
+  list-style-type: disc;
+}
+
+.report-content ol {
+  list-style-type: decimal;
+}
+
+.report-content li {
+  margin: 0.35rem 0;
+}
+
+.report-content strong {
+  font-weight: 700;
+}
+
+.report-content blockquote {
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  color: var(--text-secondary);
+}
+
+.report-content table {
+  width: 100%;
+  margin: 1.75rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.report-content th,
+.report-content td {
+  border: 1px solid var(--border);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.report-content th {
+  background: var(--primary-light);
+  font-weight: 700;
+}

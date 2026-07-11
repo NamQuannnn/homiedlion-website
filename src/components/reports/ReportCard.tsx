@@ -1,8 +1,8 @@
-import type { Report } from "@/content/reports/types";
+import type { ReportMetadata } from "@/content/reports/types";
 import { Link } from "@/i18n/routing";
 
 type ReportCardProps = {
-  report: Report;
+  report: ReportMetadata;
   locale: string;
   readLabel: string;
 };
@@ -12,13 +12,11 @@ export default function ReportCard({
   locale,
   readLabel,
 }: ReportCardProps) {
-  const language = locale === "vi" ? "vi" : "en";
-
   const formattedDate = new Intl.DateTimeFormat(
-    language === "vi" ? "vi-VN" : "en-GB",
+    locale === "vi" ? "vi-VN" : "en-GB",
     {
       day: "2-digit",
-      month: language === "vi" ? "2-digit" : "long",
+      month: locale === "vi" ? "2-digit" : "long",
       year: "numeric",
     }
   ).format(new Date(`${report.publishedAt}T00:00:00`));
@@ -54,7 +52,7 @@ export default function ReportCard({
       </div>
 
       <h2 className="text-xl font-bold leading-snug text-text">
-        {report.title[language]}
+        {report.title}
       </h2>
 
       <time
@@ -65,7 +63,7 @@ export default function ReportCard({
       </time>
 
       <p className="mt-6 flex-grow text-sm leading-7 text-text-secondary">
-        {report.summary[language]}
+        {report.summary}
       </p>
 
       <div className="mt-8 border-t border-border pt-5">
