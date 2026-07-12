@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 overflow-visible border-b border-border/70 bg-background/95 backdrop-blur-md">
       <Container className="max-w-none px-[clamp(20px,4vw,72px)]">
-        <div className="relative flex h-12 items-center justify-between sm:h-14">
+       <div className="relative flex h-16 items-center justify-between md:h-14">
           {/* Logo + phần header phình xuống */}
           <div
                className={`relative z-20 self-start -translate-x-[clamp(6px,3.4vw,50px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
@@ -52,7 +52,7 @@ export default function Header() {
             }`}
           >
             {/* Nền cong nối liền với header */}
-            <div className="pointer-events-none absolute left-3 right-3 -top-px h-[102px] rounded-b-[34px] bg-background" />
+            <div className="pointer-events-none absolute hidden md:block left-3 right-3 -top-px h-[102px] rounded-b-[34px] bg-background" />
 
             <Link
               href="/"
@@ -66,7 +66,7 @@ export default function Header() {
                 width={420}
                 height={160}
                 priority
-                className="h-auto w-[145px] -translate-y-7 object-contain sm:w-[215px] sm:-translate-y-9 lg:w-[240px]"
+                className="h-auto w-[145px] translate-y-0 object-contain md:w-[215px] md:-translate-y-8 lg:w-[240px]"
               />
             </Link>
           </div>
