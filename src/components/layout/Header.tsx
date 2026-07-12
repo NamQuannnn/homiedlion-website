@@ -1,18 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import { Link, usePathname } from "@/i18n/routing";
 import { navigation } from "@/config/navigation";
 import { site } from "@/config/site";
+import { Link, usePathname } from "@/i18n/routing";
 
 import Container from "@/components/ui/Container";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const pathname = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const enabledNavItems = navigation.filter((item) => item.enabled);
 
@@ -21,26 +23,55 @@ export default function Header() {
     return pathname.startsWith(href);
   };
 
-  return (
-    <header className="sticky top-0 z-50 overflow-visible border-b border-border/80 bg-background/90 backdrop-blur-md">
-      <Container>
-        <div className="relative flex h-12 items-center justify-between sm:h-14">
-          <Link
-            href="/"
-            className="relative z-10 flex items-center transition-opacity hover:opacity-90"
-            onClick={() => setIsOpen(false)}
-            aria-label={`${site.name} home`}
-          >
-            <Image
-              src="/logo/homie-dlion-logo.png"
-              alt={site.name}
-              width={420}
-              height={160}
-              priority
-              className="h-auto w-[100px] translate-y-0 object-contain sm:w-[140px] sm:translate-y-0"
-            />
-          </Link>
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
 
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <header className="sticky top-0 z-50 overflow-visible border-b border-border/70 bg-background/95 backdrop-blur-md">
+      <Container className="max-w-none px-[clamp(20px,4vw,72px)]">
+        <div className="relative flex h-12 items-center justify-between sm:h-14">
+          {/* Logo + phần header phình xuống */}
+          <div
+               className={`relative z-20 self-start -translate-x-[clamp(7px,2.5vw,40px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+              isScrolled
+                ? "pointer-events-none -translate-y-[115%] opacity-0"
+                : "translate-y-0 opacity-100"
+            }`}
+          >
+            {/* Nền cong nối liền với header */}
+            <div className="pointer-events-none absolute -left-0 -right-0 -top-px h-[82px] rounded-b-[28px] border-x border-b border-border/40 bg-background shadow-[0_8px_18px_rgba(15,23,42,0.06)] sm:-left-0 sm:-right-0 sm:h-[102px] sm:rounded-b-[34px]" />
+
+            <Link
+              href="/"
+              className="relative flex items-center justify-center transition-opacity hover:opacity-90"
+              onClick={() => setIsOpen(false)}
+              aria-label={`${site.name} home`}
+            >
+              <Image
+                src="/logo/homie-dlion-logo.png"
+                alt={site.name}
+                width={420}
+                height={160}
+                priority
+                className="h-auto w-[145px] -translate-y-7 object-contain sm:w-[215px] sm:-translate-y-9 lg:w-[240px]"
+              />
+            </Link>
+          </div>
+
+          {/* Menu desktop */}
           <div className="hidden items-center gap-x-8 md:flex">
             <nav className="flex items-center gap-x-8 whitespace-nowrap">
               {enabledNavItems.map((item) => (
@@ -63,9 +94,10 @@ export default function Header() {
             <LanguageSwitcher />
           </div>
 
+          {/* Nút menu mobile */}
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text md:hidden"
+            className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text md:hidden"
             onClick={() => setIsOpen((value) => !value)}
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
@@ -74,6 +106,7 @@ export default function Header() {
           </button>
         </div>
 
+        {/* Menu mobile */}
         {isOpen && (
           <div className="border-t border-border py-4 md:hidden">
             <nav className="flex flex-col gap-2">

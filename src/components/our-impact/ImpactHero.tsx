@@ -66,7 +66,7 @@ export default function ImpactHero({
 
       <div className="absolute inset-x-0 bottom-0 -z-10 h-[55%] bg-gradient-to-t from-black/80 via-black/45 to-transparent" />
 
-      <div className="mx-auto flex min-h-[68vh] w-full max-w-7xl items-end px-6 pb-12 pt-24 sm:min-h-[76vh] sm:px-10 sm:pb-16 lg:px-12">
+      <div className="flex min-h-[68vh] w-full items-end px-[clamp(20px,4vw,72px)] pb-12 pt-24 sm:min-h-[76vh] sm:pb-16">
         <div className="impact-fade-up max-w-3xl text-left">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-medium text-white/85 sm:text-sm">
             <time>{date}</time>
