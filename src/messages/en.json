@@ -208,5 +208,17 @@
     "products": "Products",
     "contact": "Contact",
     "rights": "All rights reserved."
-  }
+  },
+  "OurImpact": {
+  "eyebrow": "Beyond Business",
+  "title": "Our Impact",
+  "description": "Every initiative reflects our commitment to people, communities and a more sustainable future.",
+  "readStory": "Read Story"
+   },
+  "OurImpactDetail": {
+  "library": "Our Impact",
+  "galleryEyebrow": "PHOTO STORY",
+  "galleryTitle": "Moments from the Journey",
+  "back": "Back to Our Impact"
+}
 }

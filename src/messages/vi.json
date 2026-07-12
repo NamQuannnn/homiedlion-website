@@ -208,5 +208,17 @@
     "products": "Sản phẩm",
     "contact": "Liên hệ",
     "rights": "Bảo lưu mọi quyền."
-  }
+  },
+  "OurImpact": {
+  "eyebrow": "Vượt trên kinh doanh",
+  "title": "Dấu ấn cộng đồng",
+  "description": "Mỗi hoạt động đều thể hiện cam kết của Homie D'Lion đối với xã hội và sự phát triển bền vững.",
+  "readStory": "Xem câu chuyện"
+   },
+  "OurImpactDetail": {
+  "library": "Dấu ấn cộng đồng",
+  "galleryEyebrow": "HÀNH TRÌNH QUA ẢNH",
+  "galleryTitle": "Những khoảnh khắc đáng nhớ",
+  "back": "Quay lại Dấu ấn cộng đồng"
+}
 }
