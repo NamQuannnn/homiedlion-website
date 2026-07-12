@@ -41,7 +41,7 @@ export async function POST(request: Request) {
     const { data: emailData, error: emailError } =
       await resend.emails.send({
         from: "Homie D'Lion Website <website@homiedlion.com>",
-        to: ["namquan.homiecashews@gmail.com"],
+        to: ["sales.homiecashews@gmail.com", "namquan.homiecashews@gmail.com"],
         replyTo: data.email,
         subject:
           data.subject?.trim() ||
@@ -51,7 +51,7 @@ export async function POST(request: Request) {
           <div style="font-family:Arial,sans-serif;max-width:700px;margin:0 auto;padding:32px;border:1px solid #e5e7eb;border-radius:12px;background:#ffffff;color:#111827">
 
             <h2 style="margin:0;color:#111827">
-              🌰 Homie D'Lion Group
+              Homie D'Lion Group
             </h2>
 
             <p style="margin-top:8px;color:#6b7280">
