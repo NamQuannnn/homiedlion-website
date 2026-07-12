@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 
 import { Link, usePathname } from "@/i18n/routing";
-import Container from "@/components/ui/Container";
 import { navigation } from "@/config/navigation";
 import { site } from "@/config/site";
 
+import Container from "@/components/ui/Container";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
@@ -22,27 +22,27 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/80 bg-background/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 overflow-visible border-b border-border/80 bg-background/90 backdrop-blur-md">
       <Container>
-        <div className="flex h-25 items-center justify-between">
+        <div className="relative flex h-12 items-center justify-between sm:h-14">
           <Link
             href="/"
-            className="flex items-center transition-opacity hover:opacity-90"
+            className="relative z-10 flex items-center transition-opacity hover:opacity-90"
             onClick={() => setIsOpen(false)}
             aria-label={`${site.name} home`}
           >
             <Image
               src="/logo/homie-dlion-logo.png"
               alt={site.name}
-              width={320}
-              height={120}
+              width={420}
+              height={160}
               priority
-              className="h-16 w-auto object-contain sm:h-20"
+              className="h-auto w-[100px] translate-y-0 object-contain sm:w-[140px] sm:translate-y-0"
             />
           </Link>
 
-          <div className="hidden items-center gap-8 md:flex">
-            <nav className="flex items-center gap-8">
+          <div className="hidden items-center gap-x-8 md:flex">
+            <nav className="flex items-center gap-x-8 whitespace-nowrap">
               {enabledNavItems.map((item) => (
                 <Link
                   key={item.href}

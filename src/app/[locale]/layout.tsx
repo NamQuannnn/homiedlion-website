@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -14,8 +14,9 @@ import { routing } from "@/i18n/routing";
 
 import "@/app/globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
+const beVietnam = Be_Vietnam_Pro({
+  subsets: ["latin", "vietnamese"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -148,7 +149,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${inter.className} flex min-h-screen flex-col bg-background text-text`}
+        className={`${beVietnam.className} flex min-h-screen flex-col bg-background text-text`}
       >
         <script
           type="application/ld+json"
