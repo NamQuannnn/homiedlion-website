@@ -10,14 +10,17 @@ export default function Hero() {
   return (
     <section className="relative isolate min-h-[610px] overflow-hidden sm:min-h-[68vh] lg:min-h-[72vh]">
       <div className="absolute inset-0 -z-20">
-        <Image
-          src="/images/hero-cover.webp"
-          alt="Homie D'Lion Group"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+         <picture>
+           <source
+             media="(max-width: 767px)"
+             srcSet="/images/hero-cover-mobile.webp"
+            />
+          <img
+             src="/images/hero-cover.webp"
+             alt="Homie D'Lion Group"
+             className="h-full w-full object-cover object-center"
+            />
+         </picture>
       </div>
 
       <div className="absolute inset-0 -z-10 bg-black/25" />

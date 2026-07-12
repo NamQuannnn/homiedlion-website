@@ -47,7 +47,7 @@ export default function Header() {
           <div
                className={`relative z-20 self-start -translate-x-[clamp(6px,3.4vw,50px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isScrolled
-                ? "pointer-events-none -translate-y-[115%] opacity-0"
+                ? "md:pointer-events-none md:-translate-y-[115%] md:opacity-0"
                 : "translate-y-0 opacity-100"
             }`}
           >
@@ -66,7 +66,7 @@ export default function Header() {
                 width={420}
                 height={160}
                 priority
-                className="h-auto w-[145px] translate-y-0 object-contain md:w-[215px] md:-translate-y-8 lg:w-[240px]"
+                className="h-auto w-[145px] translate-y-4 object-contain md:w-[215px] md:-translate-y-8 lg:w-[240px]"
               />
             </Link>
           </div>
