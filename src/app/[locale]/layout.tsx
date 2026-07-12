@@ -19,6 +19,8 @@ const inter = Inter({
   display: "swap",
 });
 
+const BASE_URL = "https://homiedlion.com";
+
 type LayoutProps = Readonly<{
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -43,7 +45,7 @@ export async function generateMetadata({
   const isVietnamese = locale === "vi";
 
   return {
-    metadataBase: new URL("https://homiedlion.com"),
+    metadataBase: new URL(BASE_URL),
 
     title: {
       default: "Homie D'Lion Group",
@@ -117,11 +119,51 @@ export default async function RootLayout({
 
   const messages = await getMessages({ locale });
 
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${BASE_URL}/#organization`,
+    name: "Homie D'Lion Group",
+    url: BASE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/icon.png`,
+      width: 512,
+      height: 512,
+    },
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${BASE_URL}/#website`,
+    url: BASE_URL,
+    name: "Homie D'Lion Group",
+    publisher: {
+      "@id": `${BASE_URL}/#organization`,
+    },
+    inLanguage: locale === "vi" ? "vi-VN" : "en-US",
+  };
+
   return (
     <html lang={locale}>
       <body
         className={`${inter.className} flex min-h-screen flex-col bg-background text-text`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+
         <NextIntlClientProvider messages={messages}>
           <Header />
 

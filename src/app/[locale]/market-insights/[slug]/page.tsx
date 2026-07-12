@@ -119,8 +119,52 @@ export default async function ReportPage({
     notFound();
   }
 
+  const pageUrl = `${BASE_URL}/${locale}/market-insights/${slug}`;
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${pageUrl}#article`,
+
+    headline: report.title,
+    description: report.summary,
+
+    datePublished: report.publishedAt,
+    dateModified: report.publishedAt,
+
+    inLanguage: locale === "vi" ? "vi-VN" : "en-US",
+
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": pageUrl,
+    },
+
+    author: {
+      "@type": "Organization",
+      name: "Homie D'Lion Group",
+    },
+
+    publisher: {
+      "@type": "Organization",
+      name: "Homie D'Lion Group",
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/icon.png`,
+      },
+    },
+
+    image: `${BASE_URL}/icon.png`,
+  };
+
   return (
     <div className="w-full flex-grow">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
+
       <PageHeader
         title={report.title}
         breadcrumbs={[
