@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 
+import ContactForm from "@/components/contact/ContactForm.tsx";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
 import Heading from "@/components/ui/Heading";
@@ -31,9 +32,6 @@ export default function Contact() {
       icon: "🌐",
     },
   ];
-
-  const inputClassName =
-    "w-full rounded-lg border border-border bg-background px-4 py-3 text-text outline-none transition-colors placeholder:text-text-secondary focus:border-primary focus:bg-surface focus:ring-2 focus:ring-primary/20";
 
   return (
     <Section className="bg-background">
@@ -72,80 +70,7 @@ export default function Contact() {
           </Card>
 
           <Card>
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                <div className="space-y-2">
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-text"
-                  >
-                    {t("fullName")}
-                  </label>
-
-                  <input
-                    type="text"
-                    id="name"
-                    className={inputClassName}
-                    placeholder={t("namePlaceholder")}
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label
-                    htmlFor="company"
-                    className="block text-sm font-medium text-text"
-                  >
-                    {t("companyField")}
-                  </label>
-
-                  <input
-                    type="text"
-                    id="company"
-                    className={inputClassName}
-                    placeholder={t("companyPlaceholder")}
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-text"
-                >
-                  {t("emailField")}
-                </label>
-
-                <input
-                  type="email"
-                  id="email"
-                  className={inputClassName}
-                  placeholder={t("emailPlaceholder")}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-text"
-                >
-                  {t("message")}
-                </label>
-
-                <textarea
-                  id="message"
-                  rows={4}
-                  className={`${inputClassName} resize-none`}
-                  placeholder={t("messagePlaceholder")}
-                />
-              </div>
-
-              <button
-                type="button"
-                className="mt-2 inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-primary/30"
-              >
-                {t("sendInquiry")}
-              </button>
-            </form>
+            <ContactForm />
           </Card>
         </div>
       </Container>

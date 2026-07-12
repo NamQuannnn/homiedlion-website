@@ -116,8 +116,14 @@ export async function getAllReports(
 
   return reports
     .filter((report): report is Report => report !== null)
-    .map(({ contentHtml: _contentHtml, ...metadata }) => metadata)
-    .sort(
+    .map((report) => ({
+        slug: report.slug,
+        title: report.title,
+        period: report.period,
+        publishedAt: report.publishedAt,
+        summary: report.summary,
+        downloadFile: report.downloadFile,
+      }))    .sort(
       (a, b) =>
         new Date(b.publishedAt).getTime() -
         new Date(a.publishedAt).getTime()

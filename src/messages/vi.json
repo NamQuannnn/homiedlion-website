@@ -181,7 +181,19 @@
     "companyPlaceholder": "Tên công ty",
     "emailPlaceholder": "email@congty.com",
     "messagePlaceholder": "Chúng tôi có thể hỗ trợ gì cho bạn?",
-    "sendInquiry": "Gửi yêu cầu"
+    "sendInquiry": "Gửi yêu cầu",
+    "name": "Họ và tên",
+    "country": "Quốc gia",
+    "phone": "Số điện thoại",
+    "subject": "Tiêu đề",
+
+    "sending": "Đang gửi...",
+
+    "success":
+    "Cảm ơn bạn! Chúng tôi đã nhận được yêu cầu.",
+
+    "error":
+    "Có lỗi xảy ra. Vui lòng thử lại."  
   },
 
   "ContactPage": {
