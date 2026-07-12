@@ -45,14 +45,14 @@ export default function Header() {
         <div className="relative flex h-12 items-center justify-between sm:h-14">
           {/* Logo + phần header phình xuống */}
           <div
-               className={`relative z-20 self-start -translate-x-[clamp(7px,2.5vw,40px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+               className={`relative z-20 self-start -translate-x-[clamp(6px,3.4vw,50px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isScrolled
                 ? "pointer-events-none -translate-y-[115%] opacity-0"
                 : "translate-y-0 opacity-100"
             }`}
           >
             {/* Nền cong nối liền với header */}
-            <div className="pointer-events-none absolute -left-0 -right-0 -top-px h-[82px] rounded-b-[28px] border-x border-b border-border/40 bg-background shadow-[0_8px_18px_rgba(15,23,42,0.06)] sm:-left-0 sm:-right-0 sm:h-[102px] sm:rounded-b-[34px]" />
+            <div className="pointer-events-none absolute left-3 right-3 -top-px h-[102px] rounded-b-[34px] bg-background" />
 
             <Link
               href="/"
