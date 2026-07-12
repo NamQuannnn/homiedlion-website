@@ -42,17 +42,33 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 overflow-visible border-b border-border/70 bg-background/95 backdrop-blur-md">
       <Container className="max-w-none px-[clamp(20px,4vw,72px)]">
-       <div className="relative flex h-16 items-center justify-between md:h-14">
-          {/* Logo + phần header phình xuống */}
+        <div className="relative flex h-16 items-center justify-between md:h-14">
+          {/* Logo mobile: nằm gọn trong header */}
+          <Link
+            href="/"
+            className="absolute left-0 top-1/2 z-20 flex -translate-y-1/2 items-center transition-opacity hover:opacity-90 md:hidden"
+            onClick={() => setIsOpen(false)}
+            aria-label={`${site.name} home`}
+          >
+            <Image
+              src="/logo/homie-dlion-logo.png"
+              alt={site.name}
+              width={420}
+              height={160}
+              priority
+              className="h-auto w-[145px] object-contain"
+            />
+          </Link>
+
+          {/* Logo desktop + phần header phình xuống */}
           <div
-               className={`relative z-20 self-start -translate-x-[clamp(6px,3.4vw,50px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+            className={`relative z-20 hidden self-start -translate-x-[clamp(6px,3.4vw,50px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:block ${
               isScrolled
-                ? "md:pointer-events-none md:-translate-y-[115%] md:opacity-0"
+                ? "pointer-events-none -translate-y-[115%] opacity-0"
                 : "translate-y-0 opacity-100"
             }`}
           >
-            {/* Nền cong nối liền với header */}
-            <div className="pointer-events-none absolute hidden md:block left-3 right-3 -top-px h-[102px] rounded-b-[34px] bg-background" />
+            <div className="pointer-events-none absolute left-3 right-3 -top-px h-[102px] rounded-b-[34px] bg-background" />
 
             <Link
               href="/"
@@ -66,7 +82,7 @@ export default function Header() {
                 width={420}
                 height={160}
                 priority
-                className="h-auto w-[145px] translate-y-4 object-contain md:w-[215px] md:-translate-y-8 lg:w-[240px]"
+                className="h-auto w-[215px] -translate-y-8 object-contain lg:w-[240px]"
               />
             </Link>
           </div>
