@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import Contact from "@/components/sections/Contact";
 import PageHeader from "@/components/ui/PageHeader";
-import { theme } from "@/lib/theme";
 
 type PageProps = {
   params: Promise<{
@@ -48,34 +48,31 @@ export async function generateMetadata({
   };
 }
 
-export default async function ContactPage() {
-  const locale = await getTranslations("ContactPage");
+export default async function ContactPage({
+  params,
+}: PageProps) {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "ContactPage",
+  });
 
   return (
     <div className="w-full flex-grow">
       <PageHeader
-        title={locale("title")}
+        eyebrow={t("eyebrow")}
+        title={t("heading")}
+        description={t("description")}
         breadcrumbs={[
           {
-            label: locale("breadcrumb"),
+            label: t("breadcrumb"),
             href: "/contact",
           },
         ]}
       />
 
-      <section className={`bg-white ${theme.layout.section}`}>
-        <div className={theme.layout.container}>
-          <div className="max-w-3xl">
-            <h2 className={theme.typography.h3}>
-              {locale("heading")}
-            </h2>
-
-            <p className={`${theme.typography.bodyText} mt-6`}>
-              {locale("description")}
-            </p>
-          </div>
-        </div>
-      </section>
+      <Contact />
     </div>
   );
 }

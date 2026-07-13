@@ -3,7 +3,7 @@
     "home": "Trang chủ",
     "about": "Giới thiệu",
     "products": "Sản phẩm",
-    "marketInsights": "Thông tin Thị trường",
+    "marketInsights": "Báo cáo Thị trường",
     "contact": "Liên hệ",
     "openMenu": "Mở menu điều hướng",
     "closeMenu": "Đóng menu điều hướng",
@@ -48,7 +48,7 @@
     "subtitle": "Built with Trust and Effort",
     "description": "Thương mại Điều Toàn cầu & Thông tin Thị trường",
     "exploreProducts": "Khám phá Sản phẩm",
-    "marketInsights": "Thông tin Thị trường"
+    "marketInsights": "Báo cáo Thị trường"
   },
 
   "About": {
@@ -68,9 +68,50 @@
   "AboutPage": {
     "title": "Về Chúng tôi",
     "breadcrumb": "Giới thiệu",
-    "heading": "Giới thiệu",
-    "paragraph1": "Được thành lập với mong muốn là cầu nối cho các nhà máy sản xuất điều ở Việt Nam tiếp cận với các nhà cung cấp nguyên liệu điều thô uy tín ở Châu Phi, cũng như các khách mua điều nhân đáng tin cậy trên toàn thế giới, với nguyên vọng mang HẠT ĐIỀU VIỆT NAM đến gần hơn với người tiêu dùng. Chúng tôi đã và vẫn đang cùng nhau thực hiện giấc mơ này với sự uy tín và nỗ lực không ngừng nghỉ.",
-    "paragraph2": "Trải qua hơn 5 năm, chúng tôi vô cùng biết ơn các quý Đối Tác khách hàng đã trao niềm tin và cùng đồng hành suốt quá trình hình thành và phát triển của Homie D’Lion để chúng tôi càng vững vàng hơn trong chặng đường sắp tới, mang đến nhiều giá trị kinh tế cũng như góp phần vào sự phát triển của xã hội."
+    "eyebrow": "VỀ CHÚNG TÔI",
+    "heading": "Built with Trust and Effort",
+    "heroDescription": "Kết nối các đối tác uy tín trong ngành điều toàn cầu bằng sự minh bạch, am hiểu thị trường và mối quan hệ bền vững.",
+    "storyEyebrow": "CÂU CHUYỆN CỦA CHÚNG TÔI",
+    "storyTitle": "Hành trình của Homie D'Lion",
+    "paragraph1": "Được thành lập với mong muốn trở thành cầu nối giữa các nhà máy sản xuất điều tại Việt Nam với những nhà cung cấp nguyên liệu điều thô uy tín tại Châu Phi, cũng như các khách mua điều nhân đáng tin cậy trên toàn thế giới, Homie D'Lion luôn hướng đến mục tiêu đưa hạt điều Việt Nam đến gần hơn với người tiêu dùng quốc tế.",
+    "paragraph2": "Trải qua hơn 5 năm hình thành và phát triển, chúng tôi vô cùng biết ơn các quý đối tác và khách hàng đã trao niềm tin và đồng hành cùng Homie D'Lion. Chính sự tin tưởng đó giúp chúng tôi ngày càng vững vàng hơn trên hành trình tạo ra giá trị kinh tế, xây dựng quan hệ hợp tác bền vững và đóng góp tích cực cho cộng đồng.",
+    "missionEyebrow": "SỨ MỆNH",
+    "missionTitle": "Kết nối bằng sự tin cậy",
+    "missionDescription": "Trở thành cầu nối đáng tin cậy giữa các nhà máy chế biến điều tại Việt Nam, nhà cung cấp điều thô, khách mua điều nhân và các đối tác logistics trên toàn thế giới.",
+    "visionEyebrow": "TẦM NHÌN",
+    "visionTitle": "Vươn tầm ngành điều Việt Nam",
+    "visionDescription": "Đồng hành cùng các đối tác để xây dựng một chuỗi cung ứng minh bạch, bền vững và góp phần đưa hạt điều Việt Nam đến gần hơn với người tiêu dùng trên toàn thế giới.",
+    "valuesEyebrow": "GIÁ TRỊ CỐT LÕI",
+    "valuesTitle": "Những điều chúng tôi luôn theo đuổi",
+    "value1Title": "Uy tín",
+    "value1Description": "Giữ lời hứa, minh bạch và đặt lợi ích lâu dài của đối tác lên hàng đầu.",
+    "value2Title": "Kết nối",
+    "value2Description": "Xây dựng mạng lưới bền vững giữa nhà cung cấp, nhà máy, khách mua và đối tác logistics.",
+    "value3Title": "Hiểu thị trường",
+    "value3Description": "Không chỉ kết nối giao dịch mà còn đồng hành bằng dữ liệu, phân tích và kinh nghiệm thực tế.",
+    "value4Title": "Trách nhiệm",
+    "value4Description": "Kinh doanh song hành cùng những hoạt động hướng đến cộng đồng và phát triển bền vững.",
+    "whyEyebrow": "VÌ SAO CHỌN HOMIE D'LION",
+    "whyTitle": "Đồng hành xuyên suốt mỗi giao dịch",
+    "whyDescription": "Chúng tôi không chỉ tạo kết nối ban đầu mà còn hỗ trợ các bên bằng thông tin thị trường, sự phối hợp và kinh nghiệm thực tế trong suốt quá trình giao dịch.",
+    "why1Title": "Mạng lưới nguồn cung",
+    "why1Description": "Kết nối với các nhà cung cấp điều thô tại những vùng nguyên liệu quan trọng ở Châu Phi.",
+    "why2Title": "Hiểu ngành điều Việt Nam",
+    "why2Description": "Am hiểu nhu cầu của các nhà máy chế biến và đặc điểm vận hành của thị trường trong nước.",
+    "why3Title": "Kết nối khách mua quốc tế",
+    "why3Description": "Hỗ trợ kết nối các nhà máy và đơn vị xuất khẩu với những khách mua điều nhân phù hợp.",
+    "why4Title": "Hỗ trợ logistics",
+    "why4Description": "Phối hợp với các đối tác vận chuyển để hỗ trợ quá trình giao nhận hàng hóa quốc tế.",
+    "timelineEyebrow": "HÀNH TRÌNH PHÁT TRIỂN",
+    "timelineTitle": "Lịch sử hình thành",
+    "timeline2019Title": "Thành lập công ty",
+    "timeline2019Description": "Homie Cashews được thành lập với định hướng kết nối các nhà máy chế biến điều Việt Nam với nguồn nguyên liệu chất lượng từ Tây Phi.",
+    "timeline2023Title": "Mở rộng văn phòng",
+    "timeline2023Description": "Chính thức đưa vào hoạt động hai văn phòng tại TP. Hồ Chí Minh và Phước Bình, Bình Phước nhằm tăng cường kết nối với khách hàng, đối tác và các nhà máy chế biến điều.",
+    "timeline2025Title": "Homie D'Lion Group",
+    "timeline2025Description": "Chính thức đổi tên thành Homie D'Lion Group, mở rộng định hướng phát triển trong thương mại điều, logistics, thông tin thị trường và các hoạt động cộng đồng.",
+    "timelineTodayTitle": "Hành trình tiếp tục",
+    "timelineTodayDescription": "Tiếp tục mở rộng mạng lưới đối tác toàn cầu và xây dựng những giá trị bền vững cho ngành điều."
   },
 
   "Products": {
@@ -119,11 +160,11 @@
   },
 
   "MarketInsights": {
-    "eyebrow": "THÔNG TIN THỊ TRƯỜNG",
-    "title": "Thông tin thị trường điều toàn cầu",
-    "description": "Cập nhật báo cáo thị trường, xu hướng giá và tin tức ngành điều từ Homie D'Lion Group.",
+    "eyebrow": "BÁO CÁO THỊ TRƯỜNG",
+    "title": "Báo cáo thị trường điều toàn cầu",
+    "description": "Cập nhật báo cáo thị trường điều, lịch sử giá và tin tức logistics từ Homie D'Lion Group.",
     "exploreInsights": "Khám phá",
-    "viewReports": "Xem báo cáo",
+    "viewReports": "Xem thư viện báo cáo",
     "stats": {
       "categoriesValue": "3",
       "categoriesLabel": "Chuyên mục",
@@ -138,20 +179,20 @@
       "button": "Đọc báo cáo"
     },
     "trends": {
-      "title": "Xu hướng giá",
-      "description": "Theo dõi biến động giá điều thô và điều nhân tại các thị trường trọng điểm.",
-      "button": "Xem biểu đồ"
+      "title": "Lịch sử giá",
+      "description": "Theo dõi dữ liệu giá điều thô và điều nhân trong quá khứ tại các thị trường trọng điểm.",
+      "button": "Xem lịch sử giá"
     },
     "news": {
-      "title": "Tin tức ngành",
-      "description": "Cập nhật tin tức mới nhất từ các nước sản xuất, người mua, nhà xuất khẩu và logistics.",
-      "button": "Đọc tin"
+      "title": "Tin tức Logistics",
+      "description": "Cập nhật tin tức mới nhất về vận tải biển, cảng, container và chuỗi cung ứng quốc tế.",
+      "button": "Đọc tin Logistics"
     }
-  },
+},
 
   "MarketInsightsPage": {
-    "title": "Thông tin Thị trường",
-    "breadcrumb": "Thông tin Thị trường",
+    "title": "Báo cáo Thị trường",
+    "breadcrumb": "Báo cáo Thị trường",
     "eyebrow": "THƯ VIỆN BÁO CÁO",
     "heading": "Báo cáo thị trường điều",
     "description": "Tổng hợp các báo cáo, cập nhật và phân tích thị trường điều từ Homie D'Lion Group.",
@@ -197,11 +238,12 @@
   },
 
   "ContactPage": {
-    "title": "Liên hệ",
-    "breadcrumb": "Liên hệ",
-    "heading": "Liên hệ với chúng tôi",
-    "description": "Liên hệ Homie D'Lion Group để trao đổi về điều thô, điều nhân, hỗ trợ logistics và thông tin thị trường điều."
-  },
+  "title": "Liên hệ",
+  "breadcrumb": "Liên hệ",
+  "eyebrow": "KẾT NỐI CÙNG HOMIE D'LION",
+  "heading": "Hãy bắt đầu một cuộc trò chuyện",
+  "description": "Liên hệ với Homie D'Lion Group để trao đổi về điều thô, điều nhân, hỗ trợ logistics và thông tin thị trường."
+},
 
   "Footer": {
     "quickLinks": "Liên kết nhanh",
@@ -220,5 +262,39 @@
   "galleryEyebrow": "HÀNH TRÌNH QUA ẢNH",
   "galleryTitle": "Những khoảnh khắc đáng nhớ",
   "back": "Quay lại Dấu ấn cộng đồng"
-}
-}
+   },
+   "MarketInsightsHub": {
+    "eyebrow": "TRUNG TÂM THÔNG TIN",
+    "title": "Báo cáo thị trường",
+    "description": "Khám phá báo cáo thị trường điều, dữ liệu lịch sử giá và các cập nhật mới nhất về logistics.",
+    "reports": {
+      "title": "Báo cáo thị trường",
+      "description": "Tổng hợp các báo cáo, phân tích và cập nhật mới nhất về thị trường điều trong nước và quốc tế.",
+      "button": "Đọc báo cáo"
+    },
+    "priceHistory": {
+      "title": "Lịch sử giá",
+      "description": "Theo dõi dữ liệu giá điều thô và điều nhân.",
+      "button": "Xem lịch sử giá"
+    },
+    "logisticsNews": {
+      "title": "Tin tức Logistics",
+      "description": "Cập nhật tin tức về vận tải biển, cảng, container và chuỗi cung ứng quốc tế.",
+      "button": "Đọc tin Logistics"
+    }
+  },
+  "PriceHistoryPage": {
+  "eyebrow": "DỮ LIỆU GIÁ",
+  "title": "Lịch sử giá",
+  "description": "Theo dõi dữ liệu giá điều thô và điều nhân theo thời gian tại các thị trường trọng điểm.",
+  "comingSoon": "Dữ liệu biểu đồ đang được hoàn thiện",
+  "comingSoonDescription": "Trang này sẽ sớm hiển thị các biểu đồ lịch sử giá, bộ lọc theo nguồn gốc, chủng loại và khoảng thời gian."
+  },
+  "LogisticsNewsPage": {
+    "eyebrow": "TIN TỨC LOGISTICS",
+    "title": "Tin tức Logistics",
+    "description": "Cập nhật thông tin mới nhất về vận tải biển, cảng, container và chuỗi cung ứng quốc tế.",
+    "comingSoon": "Nội dung đang được cập nhật",
+    "comingSoonDescription": "Các bài viết về cước vận chuyển, lịch tàu, tắc nghẽn cảng và diễn biến chuỗi cung ứng sẽ được bổ sung tại đây."
+  }
+} 

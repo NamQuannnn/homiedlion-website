@@ -1,14 +1,15 @@
 {
   "Navigation": {
-    "home": "Home",
-    "about": "About",
-    "products": "Products",
-    "marketInsights": "Market Insights",
-    "contact": "Contact",
-    "openMenu": "Open navigation menu",
-    "closeMenu": "Close navigation menu",
-    "homeAria": "Homie D'Lion Group home"
-  },
+  "home": "Home",
+  "about": "About",
+  "products": "Products",
+  "marketInsights": "Market Reports",
+  "contact": "Contact",
+  "openMenu": "Open navigation menu",
+  "closeMenu": "Close navigation menu",
+  "homeAria": "Homie D'Lion Group home"
+
+},
 
   "Metadata": {
     "description": "Homie D'Lion Group specializes in Raw Cashew Nuts, Cashew Kernels, Freight Services and Cashew Market Intelligence.",
@@ -48,7 +49,7 @@
     "subtitle": "Built with Trust and Effort",
     "description": "Global Cashew Trading & Market Intelligence",
     "exploreProducts": "Explore Products",
-    "marketInsights": "Market Insights"
+    "marketInsights": "Market Reports"
   },
 
   "About": {
@@ -68,9 +69,50 @@
   "AboutPage": {
     "title": "About Us",
     "breadcrumb": "About",
-    "heading": "About Homie D'Lion Group",
-    "paragraph1": "Founded with the vision of connecting Vietnamese cashew manufacturers with trusted cashew nut suppliers in West Africa, as well as reliable cashew kernel buyers worldwide, with the goal of bringing Vietnamese cashew nuts closer to consumers. We have been and continue to work together to make this dream a reality with unwavering trust and relentless effort.",
-    "paragraph2": "For more than 5 years, we have been immensely grateful to our valued partners and customers who have placed their trust in us and accompanied Homie D'Lion throughout its formation and development. Their support has made us stronger for the journey ahead, enabling us to create greater economic value and contribute to the development of society."
+    "eyebrow": "ABOUT US",
+    "heading": "Built with Trust and Effort",
+    "heroDescription": "Connecting trusted partners across the global cashew industry through integrity, market knowledge and long-term relationships.",
+    "storyEyebrow": "OUR STORY",
+    "storyTitle": "The Journey of Homie D'Lion",
+    "paragraph1": "Homie D'Lion was founded with the vision of connecting Vietnamese cashew processors with trusted raw cashew nut suppliers in Africa, as well as reliable cashew kernel buyers around the world. Our goal is to bring Vietnamese cashews closer to consumers across international markets.",
+    "paragraph2": "Throughout more than five years of development, we have remained deeply grateful to the partners and customers who have placed their trust in Homie D'Lion. Their support has strengthened our journey and inspired us to create lasting economic value, build meaningful partnerships and contribute positively to the community.",
+    "missionEyebrow": "MISSION",
+    "missionTitle": "Connecting Through Trust",
+    "missionDescription": "To become a trusted bridge between Vietnamese cashew processors, raw cashew nut suppliers, kernel buyers and logistics partners worldwide.",
+    "visionEyebrow": "VISION",
+    "visionTitle": "Elevating Vietnamese Cashews",
+    "visionDescription": "To contribute to a transparent and sustainable global supply chain while bringing Vietnamese cashews closer to consumers around the world.",
+    "valuesEyebrow": "CORE VALUES",
+    "valuesTitle": "What Drives Us",
+    "value1Title": "Trust",
+    "value1Description": "Honouring commitments with transparency and long-term partnership.",
+    "value2Title": "Connection",
+    "value2Description": "Building strong relationships between suppliers, processors, buyers and logistics partners.",
+    "value3Title": "Market Knowledge",
+    "value3Description": "Supporting every business decision with practical experience and market intelligence.",
+    "value4Title": "Responsibility",
+    "value4Description": "Growing together with our partners while creating positive impact for the community.",
+    "whyEyebrow": "WHY HOMIE D'LION",
+    "whyTitle": "Supporting Every Stage of the Transaction",
+    "whyDescription": "We go beyond making the initial connection by supporting partners with market information, coordination and practical trade experience throughout the transaction process.",
+    "why1Title": "Sourcing Network",
+    "why1Description": "Connecting with raw cashew nut suppliers across key sourcing regions in Africa.",
+    "why2Title": "Vietnam Market Knowledge",
+    "why2Description": "Understanding the needs of Vietnamese processors and the operational realities of the local market.",
+    "why3Title": "International Buyer Connections",
+    "why3Description": "Supporting Vietnamese processors and exporters in connecting with suitable cashew kernel buyers worldwide.",
+    "why4Title": "Logistics Coordination",
+    "why4Description": "Working with logistics partners to support international cargo movements and delivery coordination.",
+    "timelineEyebrow": "OUR JOURNEY",
+    "timelineTitle": "Company Timeline",
+    "timeline2019Title": "Company Founded",
+    "timeline2019Description": "Homie Cashews was established with the vision of connecting Vietnamese cashew processors with trusted raw cashew suppliers across West Africa.",
+    "timeline2023Title": "Office Expansion",
+    "timeline2023Description": "Officially opened offices in Ho Chi Minh City and Phuoc Binh, Binh Phuoc to better serve customers, partners and Vietnamese cashew processors.",
+    "timeline2025Title": "Homie D'Lion Group",
+    "timeline2025Description": "Officially rebranded as Homie D'Lion Group, expanding into cashew trading, logistics, market intelligence and community initiatives.",
+    "timelineTodayTitle": "The Journey Continues",
+    "timelineTodayDescription": "Continuing to expand our global network while creating sustainable value for the cashew industry."
   },
 
   "Products": {
@@ -119,14 +161,14 @@
   },
 
   "MarketInsights": {
-    "eyebrow": "MARKET INSIGHTS",
-    "title": "Cashew market intelligence for global trade",
-    "description": "Stay informed with market reports, price trends and industry news from Homie D'Lion Group.",
-    "exploreInsights": "Explore Insights",
-    "viewReports": "View Reports",
+    "eyebrow": "MARKET REPORTS",
+    "title": "Cashew market reports for global trade",
+    "description": "Explore cashew market reports, historical price information and logistics news from Homie D'Lion Group.",
+    "exploreInsights": "Explore",
+    "viewReports": "View Report Library",
     "stats": {
       "categoriesValue": "3",
-      "categoriesLabel": "Insight categories",
+      "categoriesLabel": "Report categories",
       "trackingValue": "24/7",
       "trackingLabel": "Market tracking",
       "coverageValue": "Global",
@@ -134,24 +176,24 @@
     },
     "reports": {
       "title": "Market Reports",
-      "description": "Weekly and monthly cashew market analysis for better trading decisions.",
+      "description": "Cashew market reports and analysis designed to support better trading decisions.",
       "button": "Read Reports"
     },
     "trends": {
-      "title": "Price Trends",
-      "description": "Track RCN and kernel price movements across key origins and markets.",
-      "button": "View Charts"
+      "title": "Price History",
+      "description": "Review historical raw cashew nut and cashew kernel prices across key origins and markets.",
+     "button": "View Price History"
     },
     "news": {
-      "title": "Industry News",
-      "description": "Latest updates from global cashew origins, buyers, exporters and logistics.",
-      "button": "Read News"
-    }
+     "title": "Logistics News",
+     "description": "Latest updates on ocean freight, ports, containers and international supply chains.",
+      "button": "Read Logistics News"
+  }
   },
 
   "MarketInsightsPage": {
-    "title": "Market Insights",
-    "breadcrumb": "Market Insights",
+    "title": "Market Reports",
+    "breadcrumb": "Market Reports",
     "eyebrow": "REPORT LIBRARY",
     "heading": "Cashew Market Reports",
     "description": "A collection of cashew market reports, updates and analysis from Homie D'Lion Group.",
@@ -197,11 +239,12 @@
   },
 
   "ContactPage": {
-    "title": "Contact Us",
-    "breadcrumb": "Contact",
-    "heading": "Get in Touch",
-    "description": "Contact Homie D'Lion Group to discuss raw cashew nuts, cashew kernels, logistics support and cashew market information."
-  },
+  "title": "Contact Us",
+  "breadcrumb": "Contact",
+  "eyebrow": "CONNECT WITH HOMIE D'LION",
+  "heading": "Let’s Start a Conversation",
+  "description": "Contact Homie D'Lion Group to discuss raw cashew nuts, cashew kernels, logistics support and cashew market information."
+},
 
   "Footer": {
     "quickLinks": "Quick Links",
@@ -220,5 +263,39 @@
   "galleryEyebrow": "PHOTO STORY",
   "galleryTitle": "Moments from the Journey",
   "back": "Back to Our Impact"
+},
+"MarketInsightsHub": {
+  "eyebrow": "MARKET INTELLIGENCE",
+  "title": "Market Reports",
+  "description": "Explore cashew market reports, historical price data and the latest logistics updates.",
+  "reports": {
+    "title": "Market Reports",
+    "description": "A collection of reports, analysis and updates on Vietnam and global cashew markets.",
+    "button": "Read Reports"
+    },
+    "priceHistory": {
+      "title": "Price History",
+      "description": "Review historical raw cashew nut and cashew kernel prices across key markets.",
+      "button": "View Price History"
+    },
+    "logisticsNews": {
+      "title": "Logistics News",
+      "description": "Stay updated on ocean freight, ports, containers and international supply chains.",
+      "button": "Read Logistics News"
+    }
+  },
+  "PriceHistoryPage": {
+  "eyebrow": "PRICE DATA",
+  "title": "Price History",
+  "description": "Review historical raw cashew nut and cashew kernel prices across key origins and markets.",
+  "comingSoon": "Price charts are being prepared",
+  "comingSoonDescription": "This page will soon include historical price charts with filters by origin, product type and time period."
+  },
+"LogisticsNewsPage": {
+  "eyebrow": "LOGISTICS NEWS",
+  "title": "Logistics News",
+  "description": "Stay updated on ocean freight, ports, containers and international supply chains.",
+  "comingSoon": "Content is being updated",
+  "comingSoonDescription": "Articles covering freight rates, vessel schedules, port congestion and supply chain developments will appear here."
 }
 }

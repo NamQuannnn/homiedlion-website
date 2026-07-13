@@ -16,7 +16,7 @@ export const navigation = [
   },
   {
     href: "/market-insights",
-    label: "Market Insights",
+    label: "Market Reports",
     enabled: true,
   },
   {

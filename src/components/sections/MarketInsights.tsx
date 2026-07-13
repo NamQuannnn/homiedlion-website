@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
@@ -7,6 +8,8 @@ import Section from "@/components/ui/Section";
 
 export default function MarketInsights() {
   const t = useTranslations("MarketInsights");
+
+  const reportsLink = "/market-insights";
 
   const insights = [
     {
@@ -21,14 +24,14 @@ export default function MarketInsights() {
       description: t("trends.description"),
       icon: "📈",
       buttonText: t("trends.button"),
-      link: "/market-insights/trends",
+      link: "/market-insights/price-history",
     },
     {
       title: t("news.title"),
       description: t("news.description"),
-      icon: "📰",
+      icon: "🚢",
       buttonText: t("news.button"),
-      link: "/market-insights/news",
+      link: "/market-insights/logistics-news",
     },
   ];
 
@@ -49,14 +52,13 @@ export default function MarketInsights() {
               {t("description")}
             </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button href="/market-insights">
+            <div className="mt-8">
+              <Link
+                href={reportsLink}
+                className="inline-flex items-center justify-center rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-primary-hover"
+              >
                 {t("exploreInsights")}
-              </Button>
-
-              <Button href="/market-insights/reports" variant="outline">
-                {t("viewReports")}
-              </Button>
+              </Link>
             </div>
           </div>
 

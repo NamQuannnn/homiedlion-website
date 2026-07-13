@@ -1,14 +1,10 @@
-import type { Metadata } from "next";
-import {
-  getLocale,
-  getTranslations,
-} from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
-import ReportCard from "@/components/reports/ReportCard";
+import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
-import PageHeader from "@/components/ui/PageHeader";
+import Heading from "@/components/ui/Heading";
 import Section from "@/components/ui/Section";
-import { getAllReports } from "@/lib/reports";
+import { Link } from "@/i18n/routing";
 
 type PageProps = {
   params: Promise<{
@@ -16,90 +12,82 @@ type PageProps = {
   }>;
 };
 
-export async function generateMetadata({
+export default async function MarketInsightsPage({
   params,
-}: PageProps): Promise<Metadata> {
+}: PageProps) {
   const { locale } = await params;
 
   const t = await getTranslations({
     locale,
-    namespace: "PageMetadata.marketInsights",
+    namespace: "MarketInsightsHub",
   });
 
-  const url = `https://homiedlion.com/${locale}/market-insights`;
-
-  return {
-    title: t("title"),
-    description: t("description"),
-
-    alternates: {
-      canonical: url,
-      languages: {
-        vi: "https://homiedlion.com/vi/market-insights",
-        en: "https://homiedlion.com/en/market-insights",
-      },
+  const sections = [
+    {
+      title: t("reports.title"),
+      description: t("reports.description"),
+      button: t("reports.button"),
+      href: "/market-insights/reports",
+      icon: "📄",
     },
-
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url,
-      type: "website",
+    {
+      title: t("priceHistory.title"),
+      description: t("priceHistory.description"),
+      button: t("priceHistory.button"),
+      href: "/market-insights/price-history",
+      icon: "📈",
     },
-
-    twitter: {
-      title: t("title"),
-      description: t("description"),
+    {
+      title: t("logisticsNews.title"),
+      description: t("logisticsNews.description"),
+      button: t("logisticsNews.button"),
+      href: "/market-insights/logistics-news",
+      icon: "🚢",
     },
-  };
-}
-
-export default async function MarketInsightsPage() {
-  const locale = await getLocale();
-  const t = await getTranslations("MarketInsightsPage");
-
-  const reports = await getAllReports(locale);
+  ];
 
   return (
-    <div className="w-full flex-grow">
-      <PageHeader
-        title={t("title")}
-        breadcrumbs={[
-          {
-            label: t("breadcrumb"),
-            href: "/market-insights",
-          },
-        ]}
-      />
+    <Section className="bg-background">
+      <Container>
+        <Heading
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          description={t("description")}
+        />
 
-      <Section className="bg-surface">
-        <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">
-              {t("eyebrow")}
-            </p>
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+          {sections.map((section) => (
+            <Card
+              key={section.href}
+              className="group flex h-full flex-col transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
+                {section.icon}
+              </div>
 
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-text sm:text-4xl">
-              {t("heading")}
-            </h2>
+              <div className="flex-grow">
+                <h2 className="text-2xl font-bold text-text">
+                  {section.title}
+                </h2>
 
-            <p className="mt-6 text-lg leading-8 text-text-secondary">
-              {t("description")}
-            </p>
-          </div>
+                <p className="mt-4 text-base leading-7 text-text-secondary">
+                  {section.description}
+                </p>
+              </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {reports.map((report) => (
-              <ReportCard
-                key={report.slug}
-                report={report}
-                locale={locale}
-                readLabel={t("readReport")}
-              />
-            ))}
-          </div>
-        </Container>
-      </Section>
-    </div>
+              <div className="mt-8 border-t border-border pt-5">
+                <Link
+                  href={section.href}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-primary-hover"
+                >
+                  {section.button}
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </Container>
+    </Section>
   );
 }
