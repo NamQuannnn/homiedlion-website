@@ -182,27 +182,27 @@ export default async function ReportPage({
       <Section className="bg-[#f3f4f6]">
         <Container>
           <article className="mx-auto max-w-[900px] bg-white px-7 py-10 shadow-md sm:px-12 sm:py-14 lg:px-20">
-            <header className="relative mb-10">
-              <div className="mb-8 flex justify-center sm:absolute sm:right-0 sm:top-0 sm:mb-0">
-                <Image
-                  src="/logo/homie-dlion-logo.png"
-                  alt="Homie D'Lion Group"
-                  width={220}
-                  height={90}
-                  className="h-auto w-[160px] object-contain sm:w-[190px]"
-                />
-              </div>
+          <header className="mb-12">
+            <div className="flex justify-center sm:justify-end">
+              <Image
+                src="/logo/homie-dlion-logo.png"
+                alt="Homie D'Lion Group"
+                width={220}
+                height={90}
+                className="h-auto w-[145px] object-contain sm:w-[175px]"
+              />
+            </div>
 
-              <div className="mx-auto max-w-xl text-center sm:pt-20">
-                <h1 className="text-xl font-bold uppercase leading-tight text-black sm:text-2xl">
-                  {report.title}
-                </h1>
+            <div className="mx-auto mt-5 max-w-2xl text-center">
+              <h1 className="text-xl font-bold uppercase leading-tight text-black sm:text-2xl">
+                {report.title}
+              </h1>
 
-                <p className="mt-2 text-lg font-bold text-black">
-                  {report.period}
-                </p>
-              </div>
-            </header>
+              <p className="mt-3 text-lg font-bold text-black">
+                {report.period}
+              </p>
+            </div>
+          </header>
 
             <div
               className="report-content"
