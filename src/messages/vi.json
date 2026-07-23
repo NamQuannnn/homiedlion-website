@@ -300,7 +300,11 @@
     "unit": "Đơn vị",
     "lastUpdated": "Cập nhật gần nhất",
     "selectAll": "Chọn tất cả",
-    "clearAll": "Bỏ chọn tất cả"
+    "clearAll": "Bỏ chọn tất cả",
+    "latestPrices": "GIÁ MỚI NHẤT",
+    "latestPricesTitle": "Giá điều nhân tuần này",
+    "vsLastWeek": "so với tuần trước",
+    "noChange": "Không thay đổi so với tuần trước"
   },
   "LogisticsNewsPage": {
     "eyebrow": "TIN TỨC LOGISTICS",

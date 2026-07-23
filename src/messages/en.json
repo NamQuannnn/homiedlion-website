@@ -300,7 +300,11 @@
     "unit": "Unit",
     "lastUpdated": "Last updated",
     "selectAll": "Select all",
-    "clearAll": "Clear all"
+    "clearAll": "Clear all",
+    "latestPrices": "LATEST PRICES",
+    "latestPricesTitle": "This Week's Kernel Prices",
+    "vsLastWeek": "vs last week",
+    "noChange": "No change from last week"
   },
 "LogisticsNewsPage": {
   "eyebrow": "LOGISTICS NEWS",
