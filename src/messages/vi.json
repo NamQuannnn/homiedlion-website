@@ -286,11 +286,21 @@
     }
   },
   "PriceHistoryPage": {
-  "eyebrow": "DỮ LIỆU GIÁ",
-  "title": "Lịch sử giá",
-  "description": "Theo dõi dữ liệu giá điều thô và điều nhân theo thời gian tại các thị trường trọng điểm.",
-  "comingSoon": "Dữ liệu biểu đồ đang được hoàn thiện",
-  "comingSoonDescription": "Trang này sẽ sớm hiển thị các biểu đồ lịch sử giá, bộ lọc theo nguồn gốc, chủng loại và khoảng thời gian."
+    "eyebrow": "DỮ LIỆU GIÁ",
+    "title": "Lịch sử giá",
+    "description": "Theo dõi dữ liệu giá điều được cập nhật hàng tuần. Giá dưới đây là giá chào từ nhà máy và chỉ mang tính chất tham khảo.",
+    "comingSoon": "Dữ liệu biểu đồ đang được hoàn thiện",
+    "comingSoonDescription": "Trang này sẽ sớm hiển thị các biểu đồ lịch sử giá, bộ lọc theo nguồn gốc, chủng loại và khoảng thời gian.",
+    "productType": "Loại hàng",
+    "timeRange": "Khoảng thời gian",
+    "threeMonths": "3 tháng",
+    "sixMonths": "6 tháng",
+    "oneYear": "1 năm",
+    "all": "Tất cả",
+    "unit": "Đơn vị",
+    "lastUpdated": "Cập nhật gần nhất",
+    "selectAll": "Chọn tất cả",
+    "clearAll": "Bỏ chọn tất cả"
   },
   "LogisticsNewsPage": {
     "eyebrow": "TIN TỨC LOGISTICS",

@@ -1,8 +1,9 @@
 import { getTranslations } from "next-intl/server";
 
+import PriceHistoryChart from "@/components/market-insights/PriceHistoryChart";
 import Container from "@/components/ui/Container";
-import Heading from "@/components/ui/Heading";
 import Section from "@/components/ui/Section";
+import { getPriceHistory } from "@/lib/price-history";
 
 type PageProps = {
   params: Promise<{
@@ -20,23 +21,30 @@ export default async function PriceHistoryPage({
     namespace: "PriceHistoryPage",
   });
 
+  const priceHistory = await getPriceHistory();
+
   return (
     <Section className="bg-background">
       <Container>
-        <Heading
-          eyebrow={t("eyebrow")}
-          title={t("title")}
-          description={t("description")}
-        />
-
-        <div className="mt-16 rounded-3xl border border-dashed border-border bg-surface p-10 text-center sm:p-16">
-          <p className="text-lg font-semibold text-text">
-            {t("comingSoon")}
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
+            {t("eyebrow")}
           </p>
 
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-text-secondary">
-            {t("comingSoonDescription")}
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-text sm:text-5xl">
+            {t("title")}
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-text-secondary">
+            {t("description")}
           </p>
+        </div>
+
+        <div className="mt-16">
+          <PriceHistoryChart
+            data={priceHistory.rows}
+            grades={priceHistory.grades}
+          />
         </div>
       </Container>
     </Section>

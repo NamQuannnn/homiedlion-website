@@ -286,11 +286,21 @@
     }
   },
   "PriceHistoryPage": {
-  "eyebrow": "PRICE DATA",
-  "title": "Price History",
-  "description": "Review historical raw cashew nut and cashew kernel prices across key origins and markets.",
-  "comingSoon": "Price charts are being prepared",
-  "comingSoonDescription": "This page will soon include historical price charts with filters by origin, product type and time period."
+    "eyebrow": "PRICE DATA",
+    "title": "Price History",
+    "description": "Track cashew price data updated weekly. The prices below are factory offers and are provided for reference only.",
+    "comingSoon": "Price charts are being prepared",
+    "comingSoonDescription": "This page will soon include historical price charts with filters by origin, product type and time period.",
+    "productType": "Grade",
+    "timeRange": "Time range",
+    "threeMonths": "3 months",
+    "sixMonths": "6 months",
+    "oneYear": "1 year",
+    "all": "All",
+    "unit": "Unit",
+    "lastUpdated": "Last updated",
+    "selectAll": "Select all",
+    "clearAll": "Clear all"
   },
 "LogisticsNewsPage": {
   "eyebrow": "LOGISTICS NEWS",
