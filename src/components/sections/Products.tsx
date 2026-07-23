@@ -13,19 +13,16 @@ export default function Products() {
     {
       title: t("rawCashewNuts.title"),
       description: t("rawCashewNuts.description"),
-      icon: "🌰",
       link: "/products/raw-cashew-nuts",
     },
     {
       title: t("cashewKernels.title"),
       description: t("cashewKernels.description"),
-      icon: "🥜",
       link: "/products/cashew-kernels",
     },
     {
       title: t("freightServices.title"),
       description: t("freightServices.description"),
-      icon: "🚢",
       link: "/products/freight-services",
     },
   ];
@@ -41,11 +38,10 @@ export default function Products() {
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
-            <Card key={product.link} className="flex h-full flex-col">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
-                {product.icon}
-              </div>
-
+            <Card
+              key={product.link}
+              className="flex h-full flex-col"
+            >
               <div className="flex-grow space-y-4">
                 <h3 className="text-xl font-semibold text-text">
                   {product.title}
@@ -57,7 +53,10 @@ export default function Products() {
               </div>
 
               <div className="mt-8">
-                <Button href={product.link} variant="outline">
+                <Button
+                  href={product.link}
+                  variant="outline"
+                >
                   {t("learnMore")} →
                 </Button>
               </div>

@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
+import AppIcon from "@/components/ui/AppIcon";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
 import Heading from "@/components/ui/Heading";
@@ -28,21 +29,21 @@ export default async function MarketInsightsPage({
       description: t("reports.description"),
       button: t("reports.button"),
       href: "/market-insights/reports",
-      icon: "📄",
+      icon: "report" as const,
     },
     {
       title: t("priceHistory.title"),
       description: t("priceHistory.description"),
       button: t("priceHistory.button"),
       href: "/market-insights/price-history",
-      icon: "📈",
+      icon: "price" as const,
     },
     {
       title: t("logisticsNews.title"),
       description: t("logisticsNews.description"),
       button: t("logisticsNews.button"),
       href: "/market-insights/logistics-news",
-      icon: "🚢",
+      icon: "logistics" as const,
     },
   ];
 
@@ -61,8 +62,11 @@ export default async function MarketInsightsPage({
               key={section.href}
               className="group flex h-full flex-col transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
-                {section.icon}
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-primary">
+                <AppIcon
+                  name={section.icon}
+                  className="h-7 w-7"
+                />
               </div>
 
               <div className="flex-grow">

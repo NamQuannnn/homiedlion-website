@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
+import AppIcon from "@/components/ui/AppIcon";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
@@ -62,22 +63,22 @@ export default async function AboutPage({
 
   const values = [
     {
-      icon: "🤝",
+      icon: "trust" as const,
       title: t("value1Title"),
       description: t("value1Description"),
     },
     {
-      icon: "🌍",
+      icon: "connection" as const,
       title: t("value2Title"),
       description: t("value2Description"),
     },
     {
-      icon: "📊",
+      icon: "market" as const,
       title: t("value3Title"),
       description: t("value3Description"),
     },
     {
-      icon: "❤️",
+      icon: "responsibility" as const,
       title: t("value4Title"),
       description: t("value4Description"),
     },
@@ -359,8 +360,8 @@ export default async function AboutPage({
                 key={value.title}
                 className="flex h-full flex-col p-8"
               >
-                <div className="mb-6 text-4xl" aria-hidden="true">
-                  {value.icon}
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-primary">
+                <AppIcon name={value.icon} className="h-7 w-7" />
                 </div>
 
                 <h3 className="text-xl font-bold text-text">

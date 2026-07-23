@@ -7,7 +7,6 @@ import {
 import { notFound } from "next/navigation";
 
 import Container from "@/components/ui/Container";
-import PageHeader from "@/components/ui/PageHeader";
 import Section from "@/components/ui/Section";
 import { Link, routing } from "@/i18n/routing";
 import {
@@ -165,19 +164,6 @@ export default async function ReportPage({
         }}
       />
 
-      <PageHeader
-        title={report.title}
-        breadcrumbs={[
-          {
-            label: t("library"),
-            href: "/market-insights",
-          },
-          {
-            label: report.title,
-            href: `/market-insights/${report.slug}`,
-          },
-        ]}
-      />
 
       <Section className="bg-[#f3f4f6]">
         <Container>

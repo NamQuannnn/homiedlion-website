@@ -1,32 +1,32 @@
 export const navigation = [
   {
     href: "/",
-    label: "Home",
+    key: "home",
     enabled: true,
   },
   {
     href: "/about",
-    label: "About",
+    key: "about",
     enabled: true,
   },
   {
     href: "/products",
-    label: "Products",
+    key: "products",
     enabled: true,
   },
   {
     href: "/market-insights",
-    label: "Market Reports",
+    key: "marketReports",
     enabled: true,
   },
   {
     href: "/our-impact",
-    label: "Our Impact",
+    key: "ourImpact",
     enabled: true,
   },
   {
     href: "/contact",
-    label: "Contact",
+    key: "contact",
     enabled: true,
   },
-];
+] as const;

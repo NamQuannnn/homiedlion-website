@@ -1,15 +1,16 @@
 {
   "Navigation": {
-  "home": "Home",
-  "about": "About",
-  "products": "Products",
-  "marketInsights": "Market Reports",
-  "contact": "Contact",
-  "openMenu": "Open navigation menu",
-  "closeMenu": "Close navigation menu",
-  "homeAria": "Homie D'Lion Group home"
-
-},
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "marketInsights": "Market Reports",
+    "marketReports": "Market Reports",
+    "ourImpact": "Our Impact",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "homeAria": "Homie D'Lion Group home"
+  },
 
   "Metadata": {
     "description": "Homie D'Lion Group specializes in Raw Cashew Nuts, Cashew Kernels, Freight Services and Cashew Market Intelligence.",

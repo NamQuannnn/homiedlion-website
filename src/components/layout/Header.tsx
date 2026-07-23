@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { navigation } from "@/config/navigation";
 import { site } from "@/config/site";
@@ -10,11 +10,12 @@ import { Link, usePathname } from "@/i18n/routing";
 import Container from "@/components/ui/Container";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-export default function Header() {
-  const pathname = usePathname();
+import { useTranslations } from "next-intl";
 
+export default function Header() {
+  const t = useTranslations("Navigation");
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   const enabledNavItems = navigation.filter((item) => item.enabled);
 
@@ -23,30 +24,14 @@ export default function Header() {
     return pathname.startsWith(href);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <header className="sticky top-0 z-50 overflow-visible border-b border-border/70 bg-background/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/95 backdrop-blur-md">
       <Container className="max-w-none px-[clamp(20px,4vw,72px)]">
-        <div className="relative flex h-16 items-center justify-between md:h-14">
-          {/* Logo mobile: nằm gọn trong header */}
+        <div className="flex h-16 items-center justify-between md:h-16">
+          {/* Logo */}
           <Link
             href="/"
-            className="absolute left-0 top-1/2 z-20 flex -translate-y-1/2 items-center transition-opacity hover:opacity-90 md:hidden"
+            className="flex items-center transition-opacity hover:opacity-90"
             onClick={() => setIsOpen(false)}
             aria-label={`${site.name} home`}
           >
@@ -56,36 +41,9 @@ export default function Header() {
               width={420}
               height={160}
               priority
-              className="h-auto w-[145px] object-contain"
+              className="h-auto w-[135px] object-contain sm:w-[155px] lg:w-[170px]"
             />
           </Link>
-
-          {/* Logo desktop + phần header phình xuống */}
-          <div
-            className={`relative z-20 hidden self-start -translate-x-[clamp(6px,3.4vw,50px)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] md:block ${
-              isScrolled
-                ? "pointer-events-none -translate-y-[115%] opacity-0"
-                : "translate-y-0 opacity-100"
-            }`}
-          >
-            <div className="pointer-events-none absolute left-3 right-3 -top-px h-[102px] rounded-b-[34px] bg-background" />
-
-            <Link
-              href="/"
-              className="relative flex items-center justify-center transition-opacity hover:opacity-90"
-              onClick={() => setIsOpen(false)}
-              aria-label={`${site.name} home`}
-            >
-              <Image
-                src="/logo/homie-dlion-logo.png"
-                alt={site.name}
-                width={420}
-                height={160}
-                priority
-                className="h-auto w-[215px] -translate-y-8 object-contain lg:w-[240px]"
-              />
-            </Link>
-          </div>
 
           {/* Menu desktop */}
           <div className="hidden items-center gap-x-8 md:flex">
@@ -100,7 +58,7 @@ export default function Header() {
                       : "text-text-secondary hover:text-primary"
                   }`}
                 >
-                  {item.label}
+                  {t(item.key)}
                 </Link>
               ))}
             </nav>
@@ -110,10 +68,10 @@ export default function Header() {
             <LanguageSwitcher />
           </div>
 
-          {/* Nút menu mobile */}
+          {/* Mobile menu button */}
           <button
             type="button"
-            className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface text-text md:hidden"
             onClick={() => setIsOpen((value) => !value)}
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
@@ -122,7 +80,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Menu mobile */}
+        {/* Mobile menu */}
         {isOpen && (
           <div className="border-t border-border py-4 md:hidden">
             <nav className="flex flex-col gap-2">
@@ -137,7 +95,7 @@ export default function Header() {
                       : "text-text-secondary hover:bg-surface hover:text-primary"
                   }`}
                 >
-                  {item.label}
+                  {t(item.key)}
                 </Link>
               ))}
             </nav>

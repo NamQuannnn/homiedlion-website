@@ -6,6 +6,7 @@ interface PageHeaderProps {
   title: string;
   description?: string;
   breadcrumbs: { label: string; href: string }[];
+  compact?: boolean;
 }
 
 export default function PageHeader({
@@ -13,9 +14,14 @@ export default function PageHeader({
   title,
   description,
   breadcrumbs,
+  compact = false,
 }: PageHeaderProps) {
   return (
-    <div className="w-full border-b border-gray-200 bg-[#FAF8F5] py-16 lg:py-24">
+    <div
+      className={`w-full border-b border-gray-200 bg-[#FAF8F5] ${
+        compact ? "py-8 lg:py-10" : "py-16 lg:py-24"
+      }`}
+    >
       <div className={theme.layout.container}>
         <nav className="mb-8">
           <ol className="flex items-center space-x-2 text-sm font-medium text-[#6B7280]">
@@ -58,9 +64,15 @@ export default function PageHeader({
           </p>
         )}
 
-        <h1 className={`${theme.typography.h1} max-w-4xl`}>
+          <h1
+          className={
+            compact
+              ? "max-w-5xl text-3xl font-bold leading-tight tracking-tight text-text sm:text-4xl lg:text-5xl"
+              : `${theme.typography.h1} max-w-4xl`
+          }
+          >
           {title}
-        </h1>
+          </h1>
 
         {description && (
           <p className="mt-6 max-w-3xl text-lg leading-8 text-text-secondary">

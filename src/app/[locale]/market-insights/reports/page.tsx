@@ -6,7 +6,6 @@ import {
 
 import ReportCard from "@/components/reports/ReportCard";
 import Container from "@/components/ui/Container";
-import PageHeader from "@/components/ui/PageHeader";
 import Section from "@/components/ui/Section";
 import { getAllReports } from "@/lib/reports";
 
@@ -62,15 +61,6 @@ export default async function MarketInsightsPage() {
 
   return (
     <div className="w-full flex-grow">
-      <PageHeader
-        title={t("title")}
-        breadcrumbs={[
-          {
-            label: t("breadcrumb"),
-            href: "/market-insights",
-          },
-        ]}
-      />
 
       <Section className="bg-surface">
         <Container>

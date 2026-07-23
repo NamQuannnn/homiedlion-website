@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-
+import AppIcon from "@/components/ui/AppIcon";
 import ContactForm from "@/components/contact/ContactForm.tsx";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
@@ -13,23 +13,23 @@ export default function Contact() {
     {
       label: t("company"),
       value: "Homie D'Lion Group",
-      icon: "🏢",
+      icon: "company" as const,
     },
     {
       label: t("address"),
       value:
-        "11 Street No.1, Quarter 56, Hiep Binh Ward, Ho Chi Minh City, Vietnam",
-      icon: "📍",
+        "11 Street No. 1, Quarter 56, Hiep Binh Ward, Ho Chi Minh City, Vietnam",
+      icon: "location" as const,
     },
     {
       label: t("email"),
       value: "sales.homiecashews@gmail.com",
-      icon: "✉️",
+      icon: "email" as const,
     },
     {
       label: t("website"),
-      value: "www.homiedlion.com",
-      icon: "🌐",
+      value: "homiedlion.com",
+      icon: "website" as const,
     },
   ];
 
@@ -69,8 +69,8 @@ export default function Contact() {
                     key={item.label}
                     className="flex items-start gap-5"
                   >
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
-                      {item.icon}
+                    <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-primary-light text-primary">
+                      <AppIcon name={item.icon} className="h-7 w-7" />
                     </div>
 
                     <div>
