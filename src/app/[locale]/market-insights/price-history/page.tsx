@@ -27,9 +27,6 @@ export default async function PriceHistoryPage({
     <Section className="bg-background">
       <Container>
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
-            {t("eyebrow")}
-          </p>
 
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-text sm:text-5xl">
             {t("title")}
