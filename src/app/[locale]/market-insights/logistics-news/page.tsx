@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 import Container from "@/components/ui/Container";
@@ -9,6 +10,46 @@ type PageProps = {
     locale: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "PageMetadata.logisticsNews",
+  });
+
+  const url = `https://homiedlion.com/${locale}/market-insights/logistics-news`;
+
+  return {
+    title: t("title"),
+    description: t("description"),
+
+    alternates: {
+      canonical: url,
+      languages: {
+        vi: "https://homiedlion.com/vi/market-insights/logistics-news",
+        en: "https://homiedlion.com/en/market-insights/logistics-news",
+        "x-default":
+          "https://homiedlion.com/en/market-insights/logistics-news",
+      },
+    },
+
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+      type: "website",
+    },
+
+    twitter: {
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 export default async function LogisticsNewsPage({
   params,

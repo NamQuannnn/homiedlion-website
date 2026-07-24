@@ -31,6 +31,18 @@
       "title": "Products and Services",
       "description": "Explore Homie D'Lion Group's brokerage support for raw cashew nuts, cashew kernels and international logistics."
     },
+    "reports": {
+       "title": "Cashew Market Reports",
+      "description": "Explore reports and analysis on raw cashew nuts, cashew kernels, prices, supply and developments across the global cashew trade."
+    },
+    "priceHistory": {
+      "title": "Cashew Price History",
+      "description": "Track historical cashew kernel prices by grade and review price trends over time."
+    },
+    "logisticsNews": {
+      "title": "Cashew Logistics News",
+      "description": "Follow logistics, ocean freight and supply chain developments affecting the international cashew trade."
+    },
     "marketInsights": {
       "title": "Cashew Market Reports",
       "description": "Read the latest cashew market reports, analysis and developments from Vietnam and global markets."

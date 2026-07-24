@@ -31,6 +31,18 @@
       "title": "Sản phẩm và Dịch vụ",
       "description": "Khám phá hoạt động kết nối giao dịch điều thô, điều nhân và dịch vụ logistics của Homie D'Lion Group."
     },
+    "reports": {
+  "title": "Báo cáo thị trường điều",
+  "description": "Cập nhật các báo cáo và phân tích về thị trường điều thô, điều nhân, giá cả, nguồn cung và thương mại điều quốc tế."
+    },
+    "priceHistory": {
+      "title": "Lịch sử giá điều",
+      "description": "Theo dõi dữ liệu lịch sử giá điều nhân theo từng chủng loại và xu hướng biến động giá theo thời gian."
+    },
+    "logisticsNews": {
+      "title": "Tin tức logistics ngành điều",
+      "description": "Theo dõi thông tin logistics, vận tải biển và chuỗi cung ứng liên quan đến hoạt động thương mại điều quốc tế."
+    },
     "marketInsights": {
       "title": "Báo cáo Thị trường Điều",
       "description": "Cập nhật các báo cáo, phân tích và diễn biến mới nhất của thị trường điều trong nước và quốc tế."
@@ -162,6 +174,7 @@
   },
 
   "MarketInsights": {
+    "eyebrow": "BÁO CÁO THỊ TRƯỜNG",
     "title": "Báo cáo thị trường điều toàn cầu",
     "description": "Cập nhật báo cáo thị trường điều, lịch sử giá và tin tức logistics từ Homie D'Lion Group.",
     "exploreInsights": "Khám phá",

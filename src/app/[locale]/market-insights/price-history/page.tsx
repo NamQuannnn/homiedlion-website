@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
+import type { Metadata } from "next";
 import PriceHistoryChart from "@/components/market-insights/PriceHistoryChart";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
@@ -10,6 +11,45 @@ type PageProps = {
     locale: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "PageMetadata.priceHistory",
+  });
+
+  const url = `https://homiedlion.com/${locale}/market-insights/price-history`;
+
+  return {
+    title: t("title"),
+    description: t("description"),
+
+    alternates: {
+      canonical: url,
+      languages: {
+        vi: "https://homiedlion.com/vi/market-insights/price-history",
+        en: "https://homiedlion.com/en/market-insights/price-history",
+        "x-default": "https://homiedlion.com/en/market-insights/price-history",
+      },
+    },
+
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+      type: "website",
+    },
+
+    twitter: {
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 export default async function PriceHistoryPage({
   params,

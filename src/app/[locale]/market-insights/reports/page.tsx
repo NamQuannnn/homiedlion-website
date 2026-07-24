@@ -22,21 +22,25 @@ export async function generateMetadata({
 
   const t = await getTranslations({
     locale,
-    namespace: "PageMetadata.marketInsights",
+    namespace: "PageMetadata.reports",
   });
 
-  const url = `https://homiedlion.com/${locale}/market-insights`;
+  const url = `https://homiedlion.com/${locale}/market-insights/reports`;
 
   return {
     title: t("title"),
     description: t("description"),
 
     alternates: {
+
       canonical: url,
+    
       languages: {
-        vi: "https://homiedlion.com/vi/market-insights",
-        en: "https://homiedlion.com/en/market-insights",
+        vi: "https://homiedlion.com/vi/market-insights/reports",
+        en: "https://homiedlion.com/en/market-insights/reports",
+        "x-default": "https://homiedlion.com/en/market-insights/reports",
       },
+    
     },
 
     openGraph: {

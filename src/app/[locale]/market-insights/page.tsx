@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
+import type { Metadata } from "next";
 import AppIcon from "@/components/ui/AppIcon";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
@@ -12,6 +13,45 @@ type PageProps = {
     locale: string;
   }>;
 };
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "PageMetadata.marketInsights",
+  });
+
+  const url = `https://homiedlion.com/${locale}/market-insights`;
+
+  return {
+    title: t("title"),
+    description: t("description"),
+
+    alternates: {
+      canonical: url,
+      languages: {
+        vi: "https://homiedlion.com/vi/market-insights",
+        en: "https://homiedlion.com/en/market-insights",
+        "x-default": "https://homiedlion.com/en/market-insights",
+      },
+    },
+
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url,
+      type: "website",
+    },
+
+    twitter: {
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 export default async function MarketInsightsPage({
   params,

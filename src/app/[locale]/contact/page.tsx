@@ -31,6 +31,7 @@ export async function generateMetadata({
       languages: {
         vi: "https://homiedlion.com/vi/contact",
         en: "https://homiedlion.com/en/contact",
+        "x-default": "https://homiedlion.com/en/contact",
       },
     },
 
