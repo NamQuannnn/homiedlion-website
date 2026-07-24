@@ -16,19 +16,28 @@ export default function Contact() {
       icon: "company" as const,
     },
     {
-      label: t("address"),
-      value:
-        "11 Street No. 1, Quarter 56, Hiep Binh Ward, Ho Chi Minh City, Vietnam",
-      icon: "location" as const,
+        label: t("address"),
+        value: t("addressValue"),
+        href: "https://maps.app.goo.gl/JTAxcFNaNcYVeAbR6",
+        external: true,
+        icon: "location" as const,
     },
     {
       label: t("email"),
       value: "sales.homiecashews@gmail.com",
+      href: "mailto:sales.homiecashews@gmail.com",
       icon: "email" as const,
+    },
+    {
+      label: t("phone"),
+      value: "+84 933 220 299",
+      href: "tel:+84933220299",
+      icon: "phone" as const,
     },
     {
       label: t("website"),
       value: "homiedlion.com",
+      href: "https://homiedlion.com",
       icon: "website" as const,
     },
   ];
@@ -79,9 +88,20 @@ export default function Contact() {
                         {item.label}
                       </p>
 
-                      <p className="mt-2 leading-7 text-text-secondary">
-                        {item.value}
-                      </p>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          target={item.external ? "_blank" : undefined}
+                          rel={item.external ? "noopener noreferrer" : undefined}
+                          className="mt-2 block leading-7 text-text-secondary transition hover:text-primary"
+                        >
+                          {item.value}
+                        </a>
+                      ) : (
+                        <p className="mt-2 leading-7 text-text-secondary">
+                          {item.value}
+                        </p>
+                      )}
 
                     </div>
                   </div>

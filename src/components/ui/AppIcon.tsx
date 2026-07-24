@@ -6,6 +6,7 @@ type IconName =
   | "company"
   | "location"
   | "email"
+  | "phone"
   | "website"
   | "report"
   | "price"
@@ -40,6 +41,13 @@ export default function AppIcon({
         <svg {...commonProps}>
           <path d="M8.5 12.5 11 15l4.5-5" />
           <path d="M12 3 5.5 6v5c0 4.2 2.7 7.7 6.5 9 3.8-1.3 6.5-4.8 6.5-9V6L12 3Z" />
+        </svg>
+      );
+
+    case "phone":
+      return (
+        <svg {...commonProps}>
+         <path d="M6.6 3.5 9 3l2 5-2.3 1.4a15 15 0 0 0 5.9 5.9L16 13l5 2-0.5 2.4A4.5 4.5 0 0 1 16 21C8.8 20.3 3.7 15.2 3 8a4.5 4.5 0 0 1 3.6-4.5Z" />
         </svg>
       );
 
