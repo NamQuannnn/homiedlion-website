@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 
+import AppIcon from "@/components/ui/AppIcon";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
@@ -15,21 +16,21 @@ export default function MarketInsights() {
     {
       title: t("reports.title"),
       description: t("reports.description"),
-      icon: "📄",
+      icon: "report" as const,
       buttonText: t("reports.button"),
       link: "/market-insights/reports",
     },
     {
       title: t("trends.title"),
       description: t("trends.description"),
-      icon: "📈",
+      icon: "price" as const,
       buttonText: t("trends.button"),
       link: "/market-insights/price-history",
     },
     {
       title: t("news.title"),
       description: t("news.description"),
-      icon: "🚢",
+      icon: "logistics" as const,
       buttonText: t("news.button"),
       link: "/market-insights/logistics-news",
     },
@@ -40,9 +41,6 @@ export default function MarketInsights() {
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-end">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
-              {t("eyebrow")}
-            </p>
 
             <h2 className="text-4xl font-bold tracking-tight text-text sm:text-5xl">
               {t("title")}
@@ -97,9 +95,12 @@ export default function MarketInsights() {
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
           {insights.map((item) => (
             <Card key={item.link} className="flex h-full flex-col">
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-3xl">
-                {item.icon}
-              </div>
+              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light text-primary">
+                <AppIcon
+                  name={item.icon}
+                  className="h-7 w-7"
+                  />
+                </div>
 
               <div className="flex-grow space-y-3">
                 <h3 className="text-xl font-semibold text-text">
