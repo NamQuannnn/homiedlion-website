@@ -62,6 +62,7 @@ export default async function ContactPage({
   return (
     <div className="w-full flex-grow">
       <PageHeader
+        backgroundImage="/images/contact/contact-hero.jpg"
         eyebrow={t("eyebrow")}
         title={t("heading")}
         description={t("description")}

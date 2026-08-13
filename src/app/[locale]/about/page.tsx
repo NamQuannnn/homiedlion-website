@@ -111,6 +111,7 @@ export default async function AboutPage({
   return (
     <div className="w-full flex-grow">
       <PageHeader
+        backgroundImage="/images/about/about-hero.jpg"
         eyebrow={t("eyebrow")}
         title={t("heading")}
         description={t("heroDescription")}

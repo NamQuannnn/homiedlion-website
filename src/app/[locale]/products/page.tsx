@@ -76,6 +76,7 @@ export default async function ProductsPage() {
   return (
     <div className="w-full flex-grow">
       <PageHeader
+        backgroundImage="/images/products/products-hero.jpg"
         title={t("title")}
         breadcrumbs={[
           {
