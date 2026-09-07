@@ -1,44 +1,40 @@
 ---
-title: "CASHEW MARKET UPDATE END OF JULY"
-period: "15-31 JULY 2026"
-publishedAt: "2026-07-31"
-summary: "An overview of the cashew market during the end of July."
-downloadFile: "/reports/bao-cao-thi-truong-thang-7/bao-cao-thi-truong-31-7-en.pdf"
+title: "CASHEW MARKET UPDATE END OF AUGUST"
+period: "15-31 AUGUST 2026"
+publishedAt: "2026-08-31"
+summary: "An overview of the cashew market during the end of August."
+downloadFile: "/reports/bao-cao-thi-truong-thang-8/bao-cao-thi-truong-31-8-en.pdf"
 ---
 
-The kernel market remained quiet over the last two weeks of July, with very less positive information to change the overall market conditions. While RCN continued to arrive at Vietnamese in decent volumes and is expected to keep arriving through August, due to no significant congestion at port, RCN prices have remained largely stable with only a slight reduction, despite the fact that feedback from the kernel market has not been active during the recent period.
+The kernel market has remained quiet for a prolonged period, though there were expectations that demand could improve ahead of the upcoming Mid-Autumn Festival, there are still no signs of stronger buying activity from China. While EU and US Buyers remain quiet, Buyers from the Middle East have also started to come back with demand, but very slowly. In contrast, RCN prices have suddenly increased quickly for afloat shipments from West Africa, as demand for RCN from India is believed to be increasing ahead of the upcoming Diwali festival.
 
-Kernel prices remained quiet as demand from the US market continued to be heavily affected, while the announcement of the 15% tariff on cashew products has made market activity become slow and confusing, instead of covering their winter volumes, most Buyers are only making inquiries for shipments from early 2027 onward, with idea price levels for W320 around $3.00–3.05/lb. While Vietnam factories can not take risk due to the time of Indonesia and Tanzania season coming, which offer to market only high price from early crop.
+Kernel prices remain very slow at this stage, especially for W320, W450 and lower grades as broken, as trading activity is still below the market’s expectations, though the shortage of kernels is partly due to more than 50% of small domestic processors having stopped processing, as they could not balance their costs with the current RCN prices. However, local prices also started to increase slightly toward the end of August, mainly to cover some buying interest from Chinese  Buyers while shell prices remained high (due to the limited availability of RCN for processing) so, some RCN lots in bonded warehouses continued to be traded at a fairly steady pace. Most local processors are mainly trying to keep their production lines running despite the ongoing difficulties, including high bank interest rates and the challenges in maintaining cash flow from RCN purchases through to kernel sales. US Buyers are still buying with limited quanity for shipments from now until the end of the year at around $3.05–3.08/lbs, while EU Buyers are covering short-term demand at around $3.12–3.15/lbs for W320, but trading volume remains limited. While US market is still strongly affected by economic policies that have not yet been removed, most Buyers remain in a defensive position and are waiting for better opportunities once the market becomes more stable for next year. In the Middle East, main concerns remain around freight costs and the ongoing conflict, hence, some countries are also facing difficulties in getting bank discounts, so trading activity is being maintained at a limited level.
 
-Europe and Middle East continue to face high freight rates due to ongoing geopolitical tensions and unstable oil prices, and thus, many Buyers are choosing to delay their contracts, hoping freight rates will gradually decrease, as current market demand is not very strong. China market remains unpredictable, while price of W180 shows no sign of declining, market demand is still limited, with buying interest is mainly driven by stocking for the Mid-Autumn Festival and year-end demand. The gap between RCN and kernel prices has been too wide to balance so that many local processors have temporarily stopped production rather than continue struggling to find profitable solution for kernel sales during August.
+Some medium and large factories have even accepted the situation and given up their production plans for October–December, as they are unable to cover RCN at the current price levels, while Indonesia, Tanzania is also expected to come to the market soon, but the estimated prices are unlikely to be cheap, leaving factories with limited opportunities to recover their losses toward the end of the year. The current large volume of Cambodian RCN stock is the only remaining hope for market, with expectations that it could bring some profit despite weak demand during the summer, and prices have remained firm without any significant drop. It is expected to increase toward the end of the year to fulfill the Chinese market ahead of the 2027 Lunar New Year. 
 
-After a period of slowing down, RCN prices have yet to show any significant decline, as trading activity continues in the market with ddemand mainly focusing on IVC 45 lbs, trading around $1460–1470/MT, while IVC 44 lbs is at around $1420–1430/MT, following the end of the Boke season, with only limited offers remaining in the market.
+The market has shifted more toward RCN, with prices increasing suddenly at the current stage, while the kernel market remains stuck with no clear positive signs of improvement. If there is one product that has maintained a relatively stable price during the past period, Borma should be mentioned despite being new in the market and its quality standards are not yet clearly defined, Borma has attracted some interest due to its stable trading price of around $2.40–2.45/lbs throughout the recent period. At present, the market is mainly hoping that kernel prices will follow the RCN market and improve in both volume and value toward mid-to-late September. This would help factories clear stocks of secondary grades, brokens and WW from now until the Tanza/Mozambique/Indo crop officially starts harvesting and offering RCN to Vietnam.
 
-Some trading for Nigeria/Ogbomosho RCN has also been concluded, mainly because of their larger nut size, which is suitable for borma production for the China market, while Buyers have shown very little interest in smaller-size origins such as Bissau and Senegal, despite the offers available in the market. The overall market activity remains slow, while RCN arrivals at Vietnamese ports are still moderate, while low outturn RCN has yet to attract much buying interest, as large amount of 2nd-grade kernels produced, particularly broken and SK grades, are still available with huge stocks in the domestic market.
-
-The market continues to move at a slow pace, while the ongoing imbalance between RCN and kernel prices has put processors under increasing pressure and most are reporting losses with the current market conditions. It is difficult to expect a strong year-end market for W320 and W240, as Europe and US Buyers remain cautious due to ongoing concerns over import tariffs and high freight rates. Therefore, Vietnamese processors can only maintain limited production while waiting for better opportunities to find direction for the challenging market conditions ahead.
 ## Reference prices
 
 ### Kernel Offers from Packers
 
 - W320: $3.15-3.20 – Top and BRC Packers
-- W320: $3.05-3.15$ – Medium Packers 
-- W240: $3.45–3.50
+- W320: $3.10-3.15$ – Medium Packers 
+- W240: $3.40–3.50
 - W180: $4.30-4.40
-- WS: $2.6-2.65
-- LP: $2.0-2.1
+- WS: $2.57-2.60
+- LP: $1.95-2.0
 
 
 ### Raw cashew nut offers
 
-- IVC 44 lbs – 190 NC – 1430-1440 - Aug
-- IVC 45 lbs – 190 NC – 1460-1470$ - Aug
-- IVC 46 lbs – 190 NC – 1500$ - Aug
-- Ghana 44 lbs – 185 NC – 1440-1450 – July/Aug
-- Ogbo 48 lbs – 190 NC – 1545$ - Aug
-- Nige 46 lbs – 180 NC – 1460$ - July/Aug
-- Senegal 53 lbs – 225 NC – 1540$ - Aug
-- Borma IVC: 2.42-2.45$/lbs – August
+- IVC 45 lbs – 190 NC – 1500-1520$ - Sep/afloat
+- IVC 46 lbs – 190 NC – 1540-1560$ - Sep/afloat
+- IVC 47 lbs – 190 NC – 1570-1590$ - Sep/afloat
+- Ghana 48 lbs – 190 NC – 1600$ - Sep
+- Senegal 53 lbs – 225 NC – 1640$ - afloat
+
+- Borma IVC: 2.42-2.45$/lbs – Sep/Oct
 
 
 **Homie D'Lion Group**
