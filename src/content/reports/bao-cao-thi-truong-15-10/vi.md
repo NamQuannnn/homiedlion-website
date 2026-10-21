@@ -45,26 +45,26 @@ Trong giai đoạn hiện tại, ưu tiên kiểm soát tồn kho, quản trị 
 
 ### Giá chào nhân từ nhà máy
 
-o	W320:  $3.15-3.2 – đối với nhà máy lớn và BRC
-o	W320: $3.05-3.15$ – đối với nhà máy vừa
-o	W240: $3.5–3.6
-o	W180: $4.5-4.6
-o	WS: $2.55-2.6
-o	LP: $1.85-1.95
+- W320:  $3.15-3.2 – đối với nhà máy lớn và BRC
+- W320: $3.05-3.15$ – đối với nhà máy vừa
+- W240: $3.5–3.6
+- W180: $4.5-4.6
+- WS: $2.55-2.6
+- LP: $1.85-1.95
 
 
 
 ### Chào giá điều thô
 
-o	IVC 45 lbs – 185 NC – 1530$ - afloat
-o	IVC 44 lbs – 185 NC – 1490$ - afloat
-o	Tanza 52 lbs – 190 NC – 2000$ - Nov/Dec
-o	Indonesia 51 lbs – 200 NC – 1750$ - Oct Nov
-o	Mozambique 47 lbs 1650$ - Nov/Dec 
+- IVC 45 lbs – 185 NC – 1530$ - afloat
+- IVC 44 lbs – 185 NC – 1490$ - afloat
+- Tanza 52 lbs – 190 NC – 2000$ - Nov/Dec
+- Indonesia 51 lbs – 200 NC – 1750$ - Oct Nov
+- Mozambique 47 lbs 1650$ - Nov/Dec 
 
 
 ### Chào giá điều nhân lụa
-o	2.48-2.5$/lbs – Oct Nov
+- 2.48-2.5$/lbs – Oct Nov
 
 
 
