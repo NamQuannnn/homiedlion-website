@@ -1,44 +1,73 @@
 ---
-title: "CASHEW MARKET UPDATE FIRST HALF AUGUST"
-period: "01-15 AUGUST 2026"
-publishedAt: "2026-08-15"
-summary: "An overview of the cashew market during the first half of August."
-downloadFile: "/reports/bao-cao-thi-truong-thang-8/bao-cao-thi-truong-thang-8-en.pdf"
+title: "CASHEW MARKET UPDATE FIRST HALF OCTOBER"
+period: "01-15 AUOCTOBERGUST 2026"
+publishedAt: "2026-10-15"
+summary: "An overview of the cashew market during the first half of October."
+downloadFile: "/reports/bao-cao-thi-truong-thang-10/bao-cao-thi-truong-thang-10-en.pdf"
 ---
 
-The kernel market is still going through a freeze period that has continued since the July trading session and there are even more negative reports that EU- USD and Middle East Buyers delaying shipments for August–September period. While W320 and W240 are still being traded at a steady level, the lower-grade market as broken, 2nd grade, and SK, remains slow with unsold stocks which continues to affect to overall value of the supply chain, as the Middle East and China markets have not shown any positive signs throughout the summer time as usual.
+1.	Kernel Market: Weak Demand and Growing in Caution 
 
-Kernel prices remained largely unchanged during this period and market pressure even increased when Olam temporarily stopped purchasing W320/W240 from last three weeks. While some major Buyers such as Red River and Richards even delayed W320 shipment, making market liquidity more difficult and causing further congestion. The fact of increase in ocean freight, along with the difficulty in securing bookings to the Middle East, have also increased pressure on factories as more kernel stocks remain in their warehouses. While although RCN arrivals at the ports have not been too much pressure, liquidity remains low and thus some factories have even had to cut losses by selling into the local market to reduce the current output. The lack of buying activity from the Middle East Buyers continues to put pressure on 2nd grade and broken kernels, along with China Buyers have yet to return to the market, making local trading activity even quieter. After some local factories temporarily stopped production, shell prices increased slightly, encouraging some factories to return to process and look for cargo at Bonded Warehouses. Meanwhile, some US Buyers such as Ultra and Atlantix have also came back to cover for some purchases, although at lower price levels - which is still a positive sign for the market and gives some hope for improved activity toward the end of August and early September.
+The kernel market showed less positive in early October, as buying demand from major markets remained too weak to support trading activity. In China, buying activity after the National Day holiday remained slow, with only small volumes being traded and no clear signs of recovery.
 
-RCN trading remains limited, with prices declining slightly but not significantly. The market is mainly focused on IVC 45–46 lbs afloat cargoes, IVC 46 lbs is being offered and traded at around $1470–1475/mt, while 44 lbs is being sold at around $1425/mt. The Indian market appears to be more active during this period as factories are preparing materials for production ahead of the Diwali festival in late October and early November, which could be one of the reasons there are fewer RCN offers from India back to Vietnam, or explain why RCN prices have not fallen too deeply for the shipments that are about to arrive. Some Buyers are even looking for RCN shipments arriving in October–November to maintain production, instead of relying on higher-priced origins such as Bissau, Indonesia, or Tanzania in the last quarter of the year.
+Meanwhile, political tensions in the Middle East continue to rise, along with protests and social unrest in some European countries, especially France and Italy, raising concerns about the global economic outlook in the coming period. These factors may negatively affect buying demand, importers' purchasing decisions and stock planning in Western markets.
 
-The market remains slow when facing difficulties to find a balance between RCN and Kernel prices for output in Viet Nam. Meanwhile, some Borma trading have taken place at around $2.40–2.45/lb, showing that although it is a new item, still gradually attracting some interest from factories. Until the market sees a real return of demand from EU and US Buyers, Vietnamese factories are only trying to maintain operations at low capacity, some major factories have even decided to stop production and keep RCN in their warehouses, waiting for better opportunities in the final quater of the year. Although it is risky to wait for the market to recover, it seems to be a temporary strategy to avoid further losses, rather than selling off kernel stocks at the current low values when there are still too many unresolved challenges in the market.
+Regarding local market, there have been no significant changes compared to the previous period. RCN prices remain consistently high, while kernel prices have not improved accordingly, putting strong pressure on processing profit margins. Many small local processors have started considering or have already decided to stop production earlier than planned. As a result, cashew shell supply continues to face upward price pressure, as fewer processing factories remain in operation.
+
+For kernel prices, as for big-nut grades, especially W240 and W180, continue to attract the most buying interest. Kernel prices have increased slightly by around 10 cent/kg compared to September, with W320 traded at around $6.90/kg and W240 at $7.70/kg.
+
+However, rising ocean freight costs and ongoing instability in Europe are directly affecting buyers' decision. Some buyers have temporarily stopped purchasing or delay shipment schedules for existing contracts, making the recovery of the export market even more challenging.
+
+One of the main concerns in the current market is the growing stock of W320 at Vietnamese factories, as buying demand is now more focused on W240. Export prices for W320 to the EU and US markets are ranging from $3.05–3.10/lb, while W240 is traded at around $3.50–3.55/lb. W240 supply remains relatively limited, leading to a widening price gap between the two grades.
+
+
+2.	RCN Market: East Africa Offer Remain Above Acceptable Levels for Vietnamese Processors
+
+High RCN prices have continued to be a major challenge to trading activity throughout this recent period. Offers from West Africa have started to slow down, while some first auctions in Tanzania have consistently seen high prices. Buyers and Sellers have not been able to reach an agreement, leading to repeated cancellations of these auctions
+
+The initial offer price from Tanzania at around $2000/MT is considered too high for Vietnamese processors to accept under current market conditions. Mozambique RCN is also being offered at relatively high prices, ranging from $1600–1650/MT for Outturn 47–48 lbs. Meanwhile, Indonesia RCN supply remains limited, with OT 51 lbs trading at around $1720–1740/MT.
+
+From Vietnamese processors viewpoint, acceptable price levels to consider starting purchases are currently below $1800 – 1850/MT for Tanzania RCN with OT 52 lbs and below $1550/MT for Mozambique RCN with OT 47 lbs. However, the gap between Sellers' offer prices and Buyers' expected prices has not narrowed significantly.
+
+During situation of unstable kernel export prices, Vietnamese processors are likely to continue remain cautious rather than following the high offer prices for East Africa RCN. The risk to processing profit margins is a particularly important concern, especially after a rather unfavorable West African crop season since the beginning of the year.
+
+At current RCN price levels, purchasing at high prices means putting greater pressure on processing profitability and the ability to sell kernels. Therefore, any adjustment in offer prices from Sellers will play an important role in helping trading activity improve in the coming period.
+
+3.	Quarter 4 Outlook: Growing Financial Pressure and Stock Risks
+
+Vietnam enters Quarter 4 with not much positive news from both domestic and international markets. Kernel demand has not shown clear signs of recovery, while RCN prices remain high, along with rising freight costs and continued shipment delays are putting further pressure on factories’s cash flow.
+
+Besides market difficulties, the year-end period is also a time when factories need to focus on handling their financial obligations, especially bank loans with high interest rates. This puts greater pressure on working capital and raises more concerns about their ability to maintain production, particularly for factories with large stock or low profit margins.
+
+In this current market conditions, focusing on stock control, cash flow management and careful purchasing decisions could be a suitable strategy for Vietnamese processors. The market still needs more time to reach a reasonable price balance between RCN costs and kernel selling prices before a stronger recovery in trading activity can be expected during the remainder of Quarter 4.
+
+
 
 ## Reference prices
 
 ### Kernel Offers from Packers
 
-- W320:  $3.10-3.15 – Top and BRC Packers
-- W320: $3.05-3.10 – Medium Packers
-- W240: $3.4–3.5
-- W180: $4.3-4.4
-- WS: $2.57-2.60
-- LP: $1.95-2.0
+- W320:  $3.15-3.2 – top and BRC packers 
+- W320: $3.05-3.15 – medium packers 
+- W240: $3.5–3.6
+- W180: $4.5-4.6
+- WS: $2.55-2.6
+- LP: $1.85-1.95
+
 
 
 ### Raw cashew nut offers
 
-- IVC 43 lbs – 190 NC – $1400 – Aug Sep
-- IVC 44 lbs – 190 NC – $1430 – Aug Sep
-- IVC 45 lbs – 190 NC – $1460-1480 - Aug Sep
-- IVC 46 lbs – 190 NC – $1500 - Aug
-- Nige 44 lbs – 180 NC – $1380 - afloat
-- Ghana 47 lbs – 190 NC – $1540 - afloat
-- Senegal 53 lbs – 225 NC – $1640 – afloat
+- IVC 45 lbs – 185 NC – 1530$ - afloat
+- IVC 44 lbs – 185 NC – 1490$ - afloat
+- Tanza 52 lbs – 190 NC – 2000$ - Nov/Dec
+- Indonesia 51 lbs – 200 NC – 1750$ - Oct Nov
+- Mozambique 47 lbs 1650$ - Nov/Dec 
+
 
 ### Borma Offers
 
-- Borma IVC: 2.42-2.45$/lbs – August/Sep
+- 2.48-2.5$/lbs – Oct Nov
 
 
 
